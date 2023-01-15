@@ -1,0 +1,33 @@
+.mainn {
+    width: 100%;
+    height: 900px;
+}
+
+.slide_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: green;
+    background-image: url(../images/DEPARTMENTS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.slide_container button {
+    height: 50px;
+    width: 140px;
+    border: solid #FFFF56 2px;
+    background-color: transparent;
+    margin: 30px 30px;
+    border-radius: 30px;
+    color: white;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 18PX;
+
+}
