@@ -16,3 +16,27 @@
     background-size: cover;
 
 }
+
+
+.slide_container button {
+    height: 50px;
+    width: 140px;
+    border: solid #FFFF56 2px;
+    background-color: transparent;
+    margin: 30px 30px;
+    border-radius: 30px;
+    color: white;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 18PX;
+    cursor: pointer;
+
+}
+
+
+.slide_container button:hover {
+    background-color: #0b103b;
+    color: yellow;
+    border: white solid 2px;
+    transition: 0.5s;
+}

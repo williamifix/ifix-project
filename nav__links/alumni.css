@@ -31,3 +31,10 @@
     font-size: 18PX;
 
 }
+
+.slide_container button:hover {
+    background-color: #0b103b;
+    color: yellow;
+    border: white solid 2px;
+    transition: 0.5s;
+}

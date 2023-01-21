@@ -3,61 +3,61 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+
 }
 
 .main_header {
-
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    width: 100%;
-    height: 90px;
+    overflow-x: hidden;
+    height: 70px;
     background-color: #0b103b;
     position: sticky;
-    top: 0px;
+    width: 100%;
     z-index: 3;
 
 }
 
 .navbar {
-
-    margin: 0px 20px;
+    padding-top: 10px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    height: 90px;
-    width: 100%;
-
-
-
+    margin: 0px 30px;
 }
 
-.navbar .logo {
+.logo {
     display: flex;
-    gap: 0.5em;
+    gap: 10px;
+    /* background-color: aqua; */
+    flex-basis: 350px;
+
+
+
 
 }
 
-.navbar .logo img {
-    margin-top: 15px;
-    height: 50px;
-    width: 50px;
+.logo img {
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+
 }
 
-.navbar .school_name {
+.school_name {
     font-weight: bold;
-    padding-top: 18px;
-    width: 300px;
-    display: block;
+    padding-top: 14px;
     color: white;
+    font-size: 7px;
 
 }
 
-.navbar .school_name #inst_type {
+.school_name #inst_type {
     color: #FFFF56;
 }
 
 
-.menu_list {}
+.navbar .menu_list {
+    display: none;
+}
 
 .navbar .menu_list ul {
     list-style: none;
@@ -66,7 +66,7 @@
     gap: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-self: end;
     font-weight: bold;
 
 
@@ -84,26 +84,92 @@
     font-size: 15px
 }
 
+.menu-icon {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu-icon .menu-icon-bar {
+    height: 3px;
+    width: 30px;
+    background-color: #FFFF56;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+
+/* 
+/*this is for page resizing when the max width of the screen is that of a phone and other small screened devices
+@media only screen and (max-width: 425px) {
+    .menu_list {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        gap: 10px;
+        /* background-color: aqua; 
+        flex-basis: 350px;
+    }
+
+    .logo img {
+        margin-top: 10px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .school_name {
+        font-weight: bold;
+        padding-top: 12px;
+        color: white;
+        font-size: 12px;
+    }
+
+    .slide_container H2 {
+        color: WHITE;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .slide_container p {
+        color: #ffffff;
+        font-weight: bolder;
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+
+
+} */
+
+
+
+
 .slide_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     width: 100%;
-    height: 700px;
-    background-color: green;
+    height: 300px;
     background-image: url(./images/Pivot-Point-Family-Growth-Centre-Benefits-of-Smaller-Class-Sizes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
+    overflow-x: hidden;
 }
 
 
 
 .slide_container H2 {
     color: WHITE;
-    font-size: 50PX;
-    /* padding-top: 200PX; */
+    font-size: 15PX;
     font-weight: bolder;
     text-align: center;
 
@@ -112,31 +178,36 @@
 .slide_container p {
     color: #ffffff;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 15px;
     text-align: center;
 }
 
 .admission_notice {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #0b103b;
     height: 100px;
-
+    overflow: hidden;
 }
 
 .admission_notice h2 {
-    font-size: 2rem;
-    padding: 25px;
+    font-size: 13px;
+    /* padding: 25px; */
     color: #FFFF56;
+    text-align: center;
+
 }
 
 .admission_notice button {
-    height: 50px;
+    height: 40px;
     width: 140px;
     border: solid #FFFF56 2px;
     background-color: #0b103b;
-    margin: 30px 30px;
+    /* margin: 30px 30px; */
     border-radius: 30px;
+    align-self: center;
+    margin-top: 10px;
 
 }
 
@@ -144,30 +215,26 @@
 .admission_notice button a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
 }
 
 .main {
-    position: relative;
-    margin: 0px 10%;
+    margin: 0px 5%;
+    /* height: 2000px; */
+    display: block;
 
 }
 
 .main h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: bold;
     color: #0b103b;
     margin-bottom: 40px;
 }
 
-#about_us {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    color: #0b103b;
-}
+
 
 .about_us {
     margin-bottom: 100px;
@@ -176,12 +243,13 @@
 .about_msg {
     margin-top: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .headmistress_image {
-    width: 500px;
-    height: 500px;
+    width: 250px;
+    height: 200px;
     margin: 20px;
     background-color: #0b103b;
     border-radius: 20px;
@@ -192,7 +260,6 @@
 }
 
 .about_text {
-    margin: 25px 0px 0px 20px;
     width: 100%;
     color: black;
     text-align: justify;
@@ -200,20 +267,16 @@
 
 }
 
-/* #mission_vision {
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 30px;
-    color: #0b103b;
-} */
+
 
 .mission_vision {
 
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 90px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .mission_vision img {
@@ -227,24 +290,23 @@
 }
 
 .mission_vision .Mission {
+    overflow: hidden;
     padding: 20px;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     color: black;
     border-radius: 20px;
-    margin: 10px;
-    /* box-shadow: 5px 5px 10px rgb(88, 86, 86); */
+    align-self: center;
     box-shadow: 3px 3px 10px #0b103b;
-
     font-weight: bold;
     text-align: center;
-    z-index: 1;
 }
 
 .Vision p,
 .Mission p {
     position: relative;
-    top: 20px;
+    top: 10px;
+    /* padding: 10px; */
 }
 
 .mission_vision h3 {
@@ -253,16 +315,16 @@
 }
 
 .mission_vision .Vision {
+    overflow: hidden;
     z-index: 1;
     padding: 20px;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     color: black;
     border-radius: 20px;
     margin: 10px;
-    /* box-shadow: 5px 5px 10px rgb(88, 86, 86); */
     box-shadow: 3px 3px 10px #0b103b;
-
+    align-self: center;
     font-weight: bold;
     text-align: center;
 }
@@ -270,21 +332,17 @@
 
 /*this section describes the core values sesction of the home page*/
 
-/* #core_values {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    color: #0b103b;
-} */
 
 .core_values {
     /* margin: 30px 0px; */
     color: black;
-    padding: 10px;
+
     display: flex;
+    /* flex-direction: column; */
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .core_values img {
@@ -293,14 +351,15 @@
 }
 
 .core_values .value {
-    margin-right: 60px;
-    margin-bottom: 30px;
+
+    margin: 10px;
     font-weight: bold;
     height: 300px;
     width: 200px;
     border-radius: 20px;
     padding: 10px;
     box-shadow: 3px 3px 10px #0b103b;
+    overflow: hidden;
 
 }
 
@@ -324,7 +383,7 @@
     flex-direction: column;
     width: inherit;
     height: 850px;
-    margin-bottom: 0px;
+    margin-bottom: 100px;
 }
 
 
@@ -345,8 +404,8 @@
 .num3,
 .num4,
 .num5 {
-    width: 120px;
-    height: 150px;
+    width: 80px;
+    height: 110px;
     background-color: #0b103b;
     border-radius: 40px 0px 0px 40px;
 }
@@ -356,9 +415,9 @@
 .num3,
 .num4,
 .num5 {
-    padding-top: 25px;
+    padding-top: 10px;
     font-weight: bolder;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .why_star_of_the_east .reason .reason1,
@@ -366,12 +425,13 @@
 .reason3,
 .reason4,
 .reason5 {
+    overflow: hidden;
     width: 100%;
-    height: 150px;
+    height: 110px;
     background-color: #0b103b;
     margin-left: 10px;
     text-align: center;
-    padding-top: 50px;
+    padding: 20px;
     border-radius: 0px 40px 40px 0px;
     font-size: large;
 }
@@ -394,44 +454,27 @@
 }
 
 footer {
+    height: 670px;
     background-color: #0b103b;
-    display: flex;
-    height: 600px;
     width: 100%;
-    margin-top: 50px;
+    z-index: 3;
+    overflow-x: hidden;
+    position: relative;
+
+
 }
 
 .inner_footer {
-    margin: 40px 10% 0px 10%;
-    padding: 20px 0px;
+    padding: 20px 20px;
     color: white;
     display: flex;
     justify-content: space-around;
-    height: 600px;
+    flex-direction: column;
     width: 100%;
-}
 
-.inner_footer .logo {
-    display: flex;
-    gap: 0.5em;
-    flex-grow: 0;
-    flex-shrink: 1;
-}
-
-.inner_footer .logo img {
-    margin-top: 15px;
-    height: 50px;
-    width: 50px;
-}
-
-.inner_footer .school_name {
-    font-weight: bold;
-    padding-top: 18px;
-    width: 300px;
-    display: block;
-    color: white;
 
 }
+
 
 .inner_footer .school_name #inst_type {
     color: #FFFF56;
@@ -439,6 +482,11 @@ footer {
 
 .inner_footer h4 {
     line-height: 30px;
+    font-size: 12px;
+}
+
+.inner_footer .school_contact_info .logo {
+    align-self: center;
 }
 
 .inner_footer .school_links .navs ul {
@@ -455,12 +503,12 @@ footer {
 .inner_footer .social_links {
     display: flex;
     gap: 10px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
 
 .inner_footer .school_links h4 {
     color: yellow;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .inner_footer .social_links a {
