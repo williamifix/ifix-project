@@ -258,6 +258,7 @@
     background-position: center;
     background-image: url(./images/NEWPRINCIPAL.jpg);
     background-repeat: no-repeat;
+    align-self: center;
 }
 
 .about_text {
