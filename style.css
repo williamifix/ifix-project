@@ -480,13 +480,14 @@ footer {
 
 
 /*this is for page resizing when the max width of the screen is that of a phone and other small screened devices*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 829px) {
     .main_header {
         height: 90px;
     }
 
     .navbar .menu_list {
         display: block;
+        font-size: 10px;
 
     }
 
@@ -611,6 +612,19 @@ footer {
         justify-content: center;
         gap: 90px;
         margin-bottom: 100px;
+    }
+
+
+
+    .inner_footer {
+        padding: 20px 20px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+
+
     }
 
 
