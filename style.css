@@ -11,6 +11,8 @@
     height: 70px;
     background-color: #0b103b;
     position: sticky;
+    top: 0px;
+    box-shadow: 0.5px 0.5px 10px black;
     width: 100%;
     z-index: 3;
 
@@ -29,10 +31,6 @@
     gap: 10px;
     /* background-color: aqua; */
     flex-basis: 350px;
-
-
-
-
 }
 
 .logo img {
@@ -103,51 +101,7 @@
 }
 
 
-/* 
-/*this is for page resizing when the max width of the screen is that of a phone and other small screened devices
-@media only screen and (max-width: 425px) {
-    .menu_list {
-        display: none;
-    }
 
-    .logo {
-        display: flex;
-        gap: 10px;
-        /* background-color: aqua; 
-        flex-basis: 350px;
-    }
-
-    .logo img {
-        margin-top: 10px;
-        height: 40px;
-        width: 40px;
-    }
-
-    .school_name {
-        font-weight: bold;
-        padding-top: 12px;
-        color: white;
-        font-size: 12px;
-    }
-
-    .slide_container H2 {
-        color: WHITE;
-        font-size: 20px;
-        font-weight: bolder;
-        text-align: center;
-    }
-
-    .slide_container p {
-        color: #ffffff;
-        font-weight: bolder;
-        font-size: 15px;
-        text-align: center;
-    }
-
-
-
-
-} */
 
 
 
@@ -163,6 +117,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+
 }
 
 
@@ -193,7 +148,7 @@
 
 .admission_notice h2 {
     font-size: 13px;
-    /* padding: 25px; */
+
     color: #FFFF56;
     text-align: center;
 
@@ -204,7 +159,7 @@
     width: 140px;
     border: solid #FFFF56 2px;
     background-color: #0b103b;
-    /* margin: 30px 30px; */
+
     border-radius: 30px;
     align-self: center;
     margin-top: 10px;
@@ -221,7 +176,7 @@
 
 .main {
     margin: 0px 5%;
-    /* height: 2000px; */
+
     display: block;
 
 }
@@ -520,4 +475,143 @@ footer {
 
 .copyright_info {
     text-align: center;
+}
+
+
+
+/*this is for page resizing when the max width of the screen is that of a phone and other small screened devices*/
+@media only screen and (min-width: 1024px) {
+    .main_header {
+        height: 90px;
+    }
+
+    .navbar .menu_list {
+        display: block;
+
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+
+    .logo img {
+        margin-top: 10px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .school_name {
+        font-weight: bold;
+        padding-top: 15px;
+        color: white;
+        font-size: 15px;
+    }
+
+
+
+    .slide_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 550px;
+        background-image: url(./images/Pivot-Point-Family-Growth-Centre-Benefits-of-Smaller-Class-Sizes.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+
+    }
+
+
+
+    .slide_container H2 {
+        color: WHITE;
+        font-size: 45PX;
+        font-weight: bolder;
+        text-align: center;
+
+    }
+
+    .slide_container p {
+        color: #ffffff;
+        font-weight: bolder;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .admission_notice {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #0b103b;
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .admission_notice h2 {
+        font-size: 25px;
+        color: #FFFF56;
+        text-align: center;
+        align-self: center;
+
+    }
+
+    .admission_notice button {
+        height: 40px;
+        width: 140px;
+        border: solid #FFFF56 2px;
+        background-color: #0b103b;
+        border-radius: 30px;
+        align-self: center;
+
+    }
+
+
+    .admission_notice button:hover {
+        height: 40px;
+        width: 140px;
+        border: solid #FFFF56 2px;
+        background-color: #0b103b;
+        border-radius: 30px;
+        align-self: center;
+
+    }
+
+    .main h2 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: bold;
+        color: #0b103b;
+        margin-bottom: 40px;
+    }
+
+
+    .about_msg {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .headmistress_image {
+        width: 400px;
+        height: 400px;
+        margin: 20px;
+        align-self: auto;
+
+    }
+
+
+
+    .mission_vision {
+
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 90px;
+        margin-bottom: 100px;
+    }
+
+
 }
