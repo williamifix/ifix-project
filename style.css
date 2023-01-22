@@ -517,3 +517,7 @@ footer {
     text-decoration: none;
     color: white;
 }
+
+.copyright_info {
+    text-align: center;
+}
