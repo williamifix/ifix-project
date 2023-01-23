@@ -10,11 +10,12 @@
     overflow-x: hidden;
     height: 70px;
     background-color: #0b103b;
-    position: sticky;
+    position: fixed;
     top: 0px;
     box-shadow: 0.5px 0.5px 10px black;
     width: 100%;
     z-index: 3;
+    transition: 0.6s;
 
 }
 
@@ -80,7 +81,6 @@
 
 .navbar .menu_list ul li a:hover {
     color: white;
-    font-size: 15px
 }
 
 .menu-icon {
@@ -177,6 +177,8 @@
 
 .main {
     margin: 0px 5%;
+    position: relative;
+    top: 100px;
 
     display: block;
 
@@ -349,7 +351,7 @@
 .why_star_of_the_east .reason {
     width: 70%;
     height: auto;
-    margin-bottom: 20px;
+    margin: 20px 0PX;
     display: flex;
     flex-direction: row;
     color: white;
@@ -489,8 +491,9 @@ footer {
     }
 
     .navbar .menu_list {
+        margin-top: 15px;
         display: block;
-        font-size: 10px;
+        font-size: 14px;
 
     }
 
