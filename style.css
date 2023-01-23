@@ -20,7 +20,8 @@
 }
 
 .navbar {
-    height: auto;
+    height: 100vh;
+    padding-bottom: 20px;
     /* padding-top: 10px; */
     display: flex;
     flex-direction: row;
@@ -71,6 +72,12 @@
     font-weight: bold;
 
 
+
+}
+
+.navbar .menu_list ul li {
+    padding: 20px;
+    text-align: center;
 }
 
 .navbar .menu_list ul li a {
