@@ -12,3 +12,7 @@ function togglemenu() {
         menuList.style.maxHeight = "0px";
     }
 }
+const interestCohort = await document.interestCohort();
+console.log('document.interestCohort():', interestCohort);
+console.log(interestCohort.id);   // The interests cohort's number value, reflected visitor's interests
+console.log(interestCohort.version);
