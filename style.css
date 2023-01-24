@@ -478,6 +478,12 @@
         /* margin-top: 5px; */
     }
 
+
+    .inner_footer .school_links img {
+        height: 30px;
+        width: 30px;
+    }
+
     .inner_footer .school_links h4 {
         color: yellow;
         /* margin-top: 20px; */
