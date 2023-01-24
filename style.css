@@ -1022,6 +1022,13 @@
         /* margin-top: 20px; */
     }
 
+
+
+    .inner_footer .school_links img {
+        height: 30px;
+        width: 30px;
+    }
+
     .inner_footer .social_links a {
         text-decoration: none;
         color: white;
