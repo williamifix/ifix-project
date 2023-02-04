@@ -1,6 +1,12 @@
 .mainn {
     width: 100%;
-    height: 900px;
+    height: auto;
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .slide_container {
@@ -22,4 +28,63 @@
     font-weight: bolder;
     font-size: 18PX;
 
+}
+
+
+
+.mainn h2 {
+    text-align: left;
+
+}
+
+.contact_media {
+    overflow: hidden;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.contact_details {
+    margin: 30px;
+}
+
+.contact_form {
+    width: 400px;
+    height: 400px;
+    /* background-color: #FFFF56; */
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(4, 4, 60);
+    padding: 30px;
+    margin: 30px;
+}
+
+.contact_form #title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact_form h5 {
+    font-weight: bolder;
+    margin-bottom: 3px;
+}
+
+.contact_form p {
+    margin-bottom: 10px;
+}
+
+.contact_form input {
+    width: 100%;
+    height: 25px;
+}
+
+.contact_form button {
+    margin-top: 30px;
+    background-color: blue;
+    color: white;
+    height: 25px;
+    width: 100px;
+    border: opx solid;
+    border-radius: 10px;
+    box-shadow: 0.1px 0.1px 5px blue;
 }
