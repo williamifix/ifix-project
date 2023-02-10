@@ -7,7 +7,8 @@
 }
 
 /*this is for page resizing when the max width of the screen is that of a small hand held device such as smart phones*/
-@media only screen and (max-width: 768px) {
+
+@media only screen and (min-width: 320px) and (max-width: 426px) {
 
     .main_header {
         overflow-x: hidden;
@@ -34,8 +35,7 @@
         margin-top: 10px;
         display: flex;
         gap: 10px;
-        /* background-color: aqua; */
-        /* flex-basis: 350px; */
+
     }
 
     .logo img {
@@ -133,6 +133,7 @@
 
 
     .slide_container H2 {
+        margin-top: 100px;
         color: WHITE;
         font-size: 15PX;
         font-weight: bolder;
@@ -141,10 +142,16 @@
     }
 
     .slide_container p {
+        margin-top: 10px;
         color: #ffffff;
         font-weight: bolder;
         font-size: 15px;
         text-align: center;
+    }
+
+    .slide_container button a {
+        color: white;
+        text-decoration: none;
     }
 
     .admission_notice {
@@ -152,8 +159,9 @@
         flex-direction: column;
         justify-content: center;
         background-color: #0b103b;
-        height: 100px;
+        height: auto;
         overflow: hidden;
+        padding: 10px;
     }
 
     .admission_notice h2 {
@@ -165,8 +173,8 @@
     }
 
     .admission_notice button {
-        height: 40px;
-        width: 140px;
+        height: 30px;
+        width: 100px;
         border: solid #FFFF56 2px;
         background-color: #0b103b;
 
@@ -180,7 +188,7 @@
     .admission_notice button a {
         color: white;
         text-decoration: none;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: bolder;
     }
 
@@ -219,7 +227,7 @@
     .headmistress_image {
         width: 250px;
         height: 200px;
-        margin: 20px;
+        margin: 0PX 20px;
         background-color: #0b103b;
         border-radius: 20px;
         background-size: cover;
@@ -234,6 +242,7 @@
         color: black;
         text-align: justify;
         line-height: 30px;
+
 
     }
 
@@ -276,7 +285,7 @@
     .Mission p {
         position: relative;
         top: 10px;
-        /* padding: 10px; */
+
     }
 
     .mission_vision h3 {
@@ -300,15 +309,13 @@
     }
 
 
-    /*this section describes the core values sesction of the home page*/
-
 
     .core_values {
-        /* margin: 30px 0px; */
+
         color: black;
 
         display: flex;
-        /* flex-direction: column; */
+
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
@@ -387,7 +394,7 @@
     .num3,
     .num4,
     .num5 {
-        padding-top: 5px;
+        padding-top: 10px;
         font-weight: bolder;
         font-size: 50px;
     }
@@ -402,10 +409,10 @@
         height: auto;
         background-color: #0b103b;
         margin-left: 10px;
-        text-align: center;
-        padding: 20px;
+        text-align: justify;
+        padding: 15px;
         border-radius: 0px 40px 40px 0px;
-        font-size: large;
+        font-size: 15PX;
     }
 
     .move_to_top {
@@ -475,7 +482,7 @@
     .inner_footer .social_links {
         display: flex;
         gap: 10px;
-        /* margin-top: 5px; */
+
     }
 
 
@@ -486,7 +493,7 @@
 
     .inner_footer .school_links h4 {
         color: yellow;
-        /* margin-top: 20px; */
+
     }
 
     .inner_footer .social_links a {
@@ -512,37 +519,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*this is for page resizing when the max width of the screen is that of a tablet*/
+/* 
 @media only screen and (min-width: 426px) {
     .inner_footer {
         padding: 20px 20px;
@@ -583,7 +561,6 @@
         width: 140px;
         border: solid #FFFF56 2px;
         background-color: #0b103b;
-
         border-radius: 30px;
         align-self: center;
         margin-top: 10px;
@@ -592,16 +569,33 @@
 
 
 
-}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /*this is for page resizing when the screen width is greater than that of a tablet*/
+/* 
 @media only screen and (min-width: 769px) {
 
     .main_header {
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
         height: 90px;
         background-color: #0b103b;
         position: fixed;
@@ -662,7 +656,6 @@
         gap: 20px;
         display: flex;
         flex-direction: row;
-        /* justify-self: end; */
         font-weight: bold;
         transition: 0.8s;
 
@@ -670,9 +663,7 @@
     }
 
 
-    .navbar .menu_list ul li {
-        /* padding-bottom: 5px; */
-    }
+    .navbar .menu_list ul li {}
 
     .navbar .menu_list ul li a {
 
@@ -695,14 +686,7 @@
 
     }
 
-    /* 
-    .menu-icon .menu-icon-bar {
-        height: 3px;
-        width: 30px;
-        background-color: #FFFF56;
-        margin-bottom: 5px;
-        border-radius: 10px;
-    } */
+
 
 
     .slide_container {
@@ -723,7 +707,7 @@
 
 
     .slide_container H2 {
-        margin-top: 200px;
+        margin-top: 0px;
         color: WHITE;
         font-size: 45PX;
         font-weight: bolder;
@@ -733,7 +717,7 @@
 
     .slide_container p {
         color: #ffffff;
-        /* font-weight: bolder; */
+
         font-size: 25px;
         text-align: center;
     }
@@ -744,14 +728,12 @@
         justify-content: center;
         gap: 20%;
         background-color: #0b103b;
-        height: 100px;
+        height: 50px;
         overflow: hidden;
     }
 
     .admission_notice h2 {
-        margin-top: 0px;
         font-size: 25px;
-
         color: #FFFF56;
         text-align: center;
 
@@ -765,7 +747,6 @@
 
         border-radius: 30px;
         align-self: center;
-        margin-top: 10px;
 
     }
 
@@ -888,7 +869,7 @@
     .Mission p {
         position: relative;
         top: 30px;
-        /* padding: 10px; */
+
     }
 
     .mission_vision h3 {
@@ -912,16 +893,12 @@
     }
 
 
-
-    /*this section describes the core values sesction of the home page*/
-
-
     .core_values {
-        /* margin: 30px 0px; */
+
         color: black;
 
         display: flex;
-        /* flex-direction: column; */
+
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
@@ -1089,12 +1066,12 @@
     .inner_footer .social_links {
         display: flex;
         gap: 10px;
-        /* margin-top: 5px; */
+
     }
 
     .inner_footer .school_links h4 {
         color: yellow;
-        /* margin-top: 20px; */
+
     }
 
 
@@ -1114,80 +1091,7 @@
     }
 
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 
 
@@ -1204,11 +1108,12 @@
 
 
 /*this is for page resizing when the max width of the screen is that of screens larger than 15 inches laptop screens*/
-@media only screen and (min-width: 1030px) {
+/* 
+@media only screen and (min-width: 1024px) {
 
     .main_header {
-        /* overflow-x: hidden; */
-        height: 90px;
+        overflow-x: hidden;
+        height: 70px;
         background-color: #0b103b;
         position: fixed;
         top: 0px;
@@ -1230,7 +1135,7 @@
 
 
     .logo {
-        margin-top: 10px;
+        margin-top: 5px;
         display: flex;
         gap: 10px;
 
@@ -1238,7 +1143,7 @@
     }
 
     .logo img {
-        margin-top: 10px;
+        margin-top: 5px;
         height: 50px;
         width: 50px;
 
@@ -1246,7 +1151,7 @@
 
     .school_name {
         font-weight: bold;
-        padding-top: 18px;
+        padding-top: 10px;
         color: white;
         font-size: 12px;
 
@@ -1258,26 +1163,19 @@
 
 
     .navbar .menu_list {
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     .navbar .menu_list ul {
-
         list-style: none;
         height: auto;
         gap: 20px;
         display: flex;
         flex-direction: row;
-        /* justify-self: end; */
         font-weight: bold;
         transition: 0.8s;
 
 
-    }
-
-
-    .navbar .menu_list ul li {
-        /* padding-bottom: 5px; */
     }
 
     .navbar .menu_list ul li a {
@@ -1291,34 +1189,14 @@
         color: white;
     }
 
-    .menu-icon {
-        margin-top: 20px;
-        width: 50px;
-        height: 50px;
-        z-index: 5;
-        display: none;
-        flex-direction: column;
-
-    }
-
-    /* 
-    .menu-icon .menu-icon-bar {
-        height: 3px;
-        width: 30px;
-        background-color: #FFFF56;
-        margin-bottom: 5px;
-        border-radius: 10px;
-    } */
-
 
     .slide_container {
         margin-top: 65px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         position: relative;
         width: 100%;
-        height: 900px;
+        height: 1000px;
         background-image: url(./images/Pivot-Point-Family-Growth-Centre-Benefits-of-Smaller-Class-Sizes.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -1327,11 +1205,9 @@
     }
 
 
-
     .slide_container H2 {
-        margin-top: 200px;
         color: WHITE;
-        font-size: 60PX;
+        font-size: 40PX;
         font-weight: bolder;
         text-align: center;
 
@@ -1339,27 +1215,22 @@
 
     .slide_container p {
         color: #ffffff;
-        /* font-weight: bolder; */
-        font-size: 35px;
+        font-size: 25px;
         text-align: center;
     }
+
 
     .admission_notice {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 20%;
-        background-color: #0b103b;
+        justify-content: space-around;
         height: 100px;
         overflow: hidden;
     }
 
     .admission_notice h2 {
-        margin-top: 0px;
         font-size: 30px;
-
         color: #FFFF56;
-        text-align: center;
 
     }
 
@@ -1369,8 +1240,7 @@
         border: solid #FFFF56 2px;
         background-color: transparent;
         border-radius: 30px;
-        align-self: center;
-        margin-top: 10px;
+
 
     }
 
@@ -1381,7 +1251,6 @@
         color: #FFFF56;
         border-radius: 30px;
         align-self: center;
-        margin-top: 10px;
         transition: 0.5s;
 
     }
@@ -1491,7 +1360,6 @@
     .Mission p {
         position: relative;
         top: 30px;
-        /* padding: 10px; */
     }
 
     .mission_vision h3 {
@@ -1516,15 +1384,12 @@
 
 
 
-    /*this section describes the core values sesction of the home page*/
-
-
     .core_values {
-        /* margin: 30px 0px; */
+
         color: black;
 
         display: flex;
-        /* flex-direction: column; */
+
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
@@ -1693,12 +1558,12 @@
     .inner_footer .social_links {
         display: flex;
         gap: 10px;
-        /* margin-top: 5px; */
+
     }
 
     .inner_footer .school_links h4 {
         color: yellow;
-        /* margin-top: 20px; */
+
     }
 
 
@@ -1718,4 +1583,4 @@
     }
 
 
-}
+} */

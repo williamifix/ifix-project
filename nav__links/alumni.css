@@ -1,6 +1,6 @@
 .mainn {
     width: 100%;
-    height: 900px;
+    height: 100px;
 }
 
 .slide_container {
@@ -12,8 +12,8 @@
 }
 
 .slide_container button {
-    height: 50px;
-    width: 140px;
+    height: 30px;
+    width: 100px;
     border: solid #FFFF56 2px;
     background-color: transparent;
     margin: 30px 30px;
@@ -21,7 +21,7 @@
     color: white;
     align-self: center;
     font-weight: bolder;
-    font-size: 18PX;
+    font-size: 12PX;
 
 }
 

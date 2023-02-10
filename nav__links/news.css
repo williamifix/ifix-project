@@ -7,13 +7,11 @@
 
     background-image: url(../images/Neews.jpg);
 
-
-
 }
 
 .slide_container button {
-    height: 50px;
-    width: 140px;
+    height: 30px;
+    width: 120px;
     border: solid #FFFF56 2px;
     background-color: transparent;
     margin: 30px 30px;
@@ -21,7 +19,7 @@
     color: white;
     align-self: center;
     font-weight: bolder;
-    font-size: 18PX;
+    font-size: 12PX;
 
 }
 
@@ -35,7 +33,7 @@
 H1 {
     margin-top: 70px;
     text-align: center;
-    font-size: 70PX;
+    font-size: 30PX;
 }
 
 .mainn {
@@ -49,12 +47,12 @@ H1 {
 }
 
 .mainn .news_pallet {
-    height: 300px;
-    width: 300px;
+    height: auto;
+    width: 100%;
     border: 1px solid #0b103b;
     border-radius: 20px;
     padding: 10px;
-    margin: 20px;
+    margin: 20px 0px;
     box-shadow: 1px 1px 10px #0b103b;
     background-color: #f0f1f4;
 
@@ -72,6 +70,7 @@ H1 {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .mainn .news_pallet img {
