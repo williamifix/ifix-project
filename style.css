@@ -571,7 +571,7 @@
 
 /*this is for page resizing when the max width of the screen is that of a tablet*/
 
-@media only screen and (min-width: 427px) and (max-width: 768px) {
+@media only screen and (min-width: 556px) and (max-width: 768px) {
     .main_header {
         overflow-x: hidden;
         height: auto;
