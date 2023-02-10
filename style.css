@@ -8,7 +8,7 @@
 
 /*this is for page resizing when the max width of the screen is that of a small hand held device such as smart phones*/
 
-@media only screen and (min-width: 320px) and (max-width: 550px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
 
     .main_header {
         overflow-x: hidden;
@@ -571,7 +571,7 @@
 
 /*this is for page resizing when the max width of the screen is that of a tablet*/
 
-@media only screen and (min-width: 556px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     .main_header {
         overflow-x: hidden;
         height: auto;
