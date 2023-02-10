@@ -7,7 +7,7 @@
 }
 
 /*this is for page resizing when the max width of the screen is that of a small hand held device such as smart phones*/
-
+/* 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
     .main_header {
@@ -554,7 +554,7 @@
     .copyright_info {
         text-align: center;
     }
-}
+} */
 
 
 
@@ -570,7 +570,7 @@
 
 
 /*this is for page resizing when the max width of the screen is that of a tablet*/
-
+/* 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .main_header {
         overflow-x: hidden;
@@ -731,7 +731,7 @@
         text-align: center;
         animation-name: slide_p;
         animation-duration: 2s;
-        /* animation-delay: 1s; */
+
 
     }
 
@@ -1121,7 +1121,7 @@
         text-align: center;
     }
 
-}
+} */
 
 
 
@@ -1143,8 +1143,8 @@
 
 
 /*this is for page resizing when the screen width is greater than that of a tablet*/
-/* 
-@media only screen and (min-width: 769px) {
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
 
     .main_header {
         overflow-x: hidden;
@@ -1179,14 +1179,14 @@
 
     .logo img {
         margin-top: 10px;
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
 
     }
 
     .school_name {
         font-weight: bold;
-        padding-top: 18px;
+        padding-top: 13px;
         color: white;
         font-size: 12px;
 
@@ -1258,20 +1258,77 @@
 
 
 
+
     .slide_container H2 {
+        position: absolute;
+        align-self: center;
         margin-top: 0px;
         color: WHITE;
-        font-size: 45PX;
+        font-size: 35PX;
         font-weight: bolder;
         text-align: center;
+        animation-name: slide_h;
+        animation-duration: 2s;
+
+
 
     }
 
-    .slide_container p {
-        color: #ffffff;
+    @keyframes slide_h {
+        from {
+            color: transparent;
+            margin-top: -300px;
+        }
 
-        font-size: 25px;
+        to {
+            color: white;
+            margin-top: 0px;
+        }
+    }
+
+    .slide_container p {
+        position: absolute;
+        align-self: center;
+        margin-top: 50px;
+        color: #ffffff;
+        font-weight: bolder;
+        font-size: 15px;
         text-align: center;
+        animation-name: slide_p;
+        animation-duration: 2s;
+
+
+    }
+
+    @keyframes slide_p {
+        from {
+            color: #0b103b;
+        }
+
+        to {
+            color: #ffffff;
+        }
+    }
+
+    .slide_container button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .slide_container button {
+        position: absolute;
+        align-self: center;
+        height: 30px;
+        width: 100px;
+        border: solid #FFFF56 2px;
+        background-color: transparent;
+        margin-top: 120px;
+        border-radius: 30px;
+        color: white;
+        align-self: center;
+        font-weight: bolder;
+        font-size: 12PX;
+        cursor: pointer;
     }
 
     .admission_notice {
@@ -1280,11 +1337,12 @@
         justify-content: center;
         gap: 20%;
         background-color: #0b103b;
-        height: 50px;
+        height: 80px;
         overflow: hidden;
     }
 
     .admission_notice h2 {
+        margin-top: 25px;
         font-size: 25px;
         color: #FFFF56;
         text-align: center;
@@ -1353,6 +1411,7 @@
         margin-bottom: 100px;
     }
 
+
     .about_msg {
         margin-top: 10px;
         display: flex;
@@ -1379,6 +1438,7 @@
         color: black;
         text-align: justify;
         line-height: 30px;
+        padding: 30px;
 
     }
 
@@ -1583,9 +1643,10 @@
         color: white;
         display: flex;
         justify-content: space-around;
+        gap: 100px;
         flex-direction: row;
-        width: 100%;
-
+        width: 90%;
+        margin: 0px 5%;
 
 
     }
@@ -1643,7 +1704,7 @@
     }
 
 
-} */
+}
 
 
 
@@ -1661,7 +1722,7 @@
 
 /*this is for page resizing when the max width of the screen is that of screens larger than 15 inches laptop screens*/
 /* 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1061px) {
 
     .main_header {
         overflow-x: hidden;

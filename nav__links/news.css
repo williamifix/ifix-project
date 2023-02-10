@@ -46,13 +46,7 @@ H1 {
 
 }
 
-.mainn .news_pallet:hover {
-    height: 305px;
-    width: 305px;
-    transition: 0.5s;
 
-
-}
 
 .mainn .news_pallet .news_header {
     display: flex;
