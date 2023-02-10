@@ -7,7 +7,7 @@
 }
 
 /*this is for page resizing when the max width of the screen is that of a small hand held device such as smart phones*/
-/* 
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
     .main_header {
@@ -554,7 +554,7 @@
     .copyright_info {
         text-align: center;
     }
-} */
+}
 
 
 
@@ -570,7 +570,7 @@
 
 
 /*this is for page resizing when the max width of the screen is that of a tablet*/
-/* 
+
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .main_header {
         overflow-x: hidden;
@@ -1121,7 +1121,7 @@
         text-align: center;
     }
 
-} */
+}
 
 
 
