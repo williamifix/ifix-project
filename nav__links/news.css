@@ -9,19 +9,7 @@
 
 }
 
-.slide_container button {
-    height: 30px;
-    width: 120px;
-    border: solid #FFFF56 2px;
-    background-color: transparent;
-    margin: 30px 30px;
-    border-radius: 30px;
-    color: white;
-    align-self: center;
-    font-weight: bolder;
-    font-size: 12PX;
-
-}
+.slide_container button {}
 
 .slide_container button:hover {
     background-color: #0b103b;
