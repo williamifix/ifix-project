@@ -1,7 +1,6 @@
 .mainn {
     width: 80%;
     height: auto;
-
     margin: 0px 10%;
 
 
@@ -30,8 +29,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 40px 70px;
+    justify-content: space-around;
+    /* margin: 40px; */
 
 
 }

@@ -84,7 +84,6 @@
     }
 
     .navbar .menu_list ul li a {
-
         color: #FFFF56;
         text-decoration: none;
         transition-duration: 0.5s;
@@ -92,6 +91,7 @@
 
     .navbar .menu_list ul li a:hover {
         color: white;
+
     }
 
     .menu-icon {
@@ -103,6 +103,7 @@
         flex-direction: column;
 
     }
+
 
     .menu-icon .menu-icon-bar {
         height: 3px;
