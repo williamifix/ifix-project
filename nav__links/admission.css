@@ -1,7 +1,7 @@
 .mainn {
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin: 0px 10%;
+    /* margin: 0px 10%; */
 
 
 }
@@ -30,7 +30,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* margin: 40px; */
+
 
 
 }
@@ -61,7 +61,7 @@
 }
 
 .admission_steps .step {
-    margin: 20px;
+    margin: 20px 10px;
     background-color: #0b103b;
     width: 300PX;
     height: auto;
@@ -70,4 +70,44 @@
     border-radius: 20px;
     box-shadow: 1px 1px 10px #0b103b;
 
+}
+
+@media only screen and (min-width: 20px) and (max-width: 480px) {
+    .mainn {
+        width: 100%;
+        height: auto;
+
+
+
+    }
+
+    .admission_steps {
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+
+
+    }
+
+    .admission_steps .step_title {
+        display: flex;
+        margin-bottom: 20px;
+
+    }
+
+    .admission_steps .step {
+        /* margin: 20px; */
+        background-color: #0b103b;
+        width: 400PX;
+        height: auto;
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px #0b103b;
+
+    }
 }
