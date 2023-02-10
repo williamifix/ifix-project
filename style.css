@@ -7,7 +7,7 @@
 }
 
 /*this is for page resizing when the max width of the screen is that of a small hand held device such as smart phones*/
-/* 
+
 @media only screen and (min-width: 320px) and (max-width: 426px) {
 
     .main_header {
@@ -133,20 +133,70 @@
 
 
     .slide_container H2 {
-        margin-top: 100px;
+        position: absolute;
+        align-self: center;
+        margin-top: 0px;
         color: WHITE;
         font-size: 15PX;
         font-weight: bolder;
         text-align: center;
+        animation-name: slide_h;
+        animation-duration: 2s;
+
+
 
     }
 
+    @keyframes slide_h {
+        from {
+            color: transparent;
+            margin-top: -300px;
+        }
+
+        to {
+            color: white;
+            margin-top: 0px;
+        }
+    }
+
     .slide_container p {
-        margin-top: 10px;
+        position: absolute;
+        align-self: center;
+        margin-top: 55px;
         color: #ffffff;
         font-weight: bolder;
         font-size: 15px;
         text-align: center;
+        animation-name: slide_p;
+        animation-duration: 2s;
+        /* animation-delay: 1s; */
+
+    }
+
+    @keyframes slide_p {
+        from {
+            color: #0b103b;
+        }
+
+        to {
+            color: #ffffff;
+        }
+    }
+
+    .slide_container button {
+        position: absolute;
+        align-self: center;
+        height: 30px;
+        width: 100px;
+        border: solid #FFFF56 2px;
+        background-color: transparent;
+        margin-top: 130px;
+        border-radius: 30px;
+        color: white;
+        align-self: center;
+        font-weight: bolder;
+        font-size: 12PX;
+        cursor: pointer;
     }
 
     .slide_container button a {
@@ -504,7 +554,7 @@
     .copyright_info {
         text-align: center;
     }
-} */
+}
 
 
 
@@ -649,22 +699,24 @@
         align-self: center;
         margin-top: 0px;
         color: WHITE;
-        font-size: 15PX;
+        font-size: 25PX;
         font-weight: bolder;
         text-align: center;
         animation-name: slide_h;
         animation-duration: 2s;
-        /* animation-delay: s; */
+
 
 
     }
 
     @keyframes slide_h {
         from {
+            color: transparent;
             margin-top: -300px;
         }
 
         to {
+            color: white;
             margin-top: 0px;
         }
     }
