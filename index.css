@@ -1,0 +1,624 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+
+   
+}
+.filtered_background{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation-name: bodybackground;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes bodybackground {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+header{
+    background-color: rgb(4, 9, 15, 0.4);
+    backdrop-filter: blur(30px);
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+
+  
+}
+
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-width: 80vw;
+    overflow: hidden;
+    min-height: 80px;
+   
+  
+   
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+}
+.logo img{
+    width: 70px;
+    height: 50px;
+}
+
+
+.logo p{
+    font-size: 13px;
+    font-weight: bold;
+    color: #00ffff;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    
+}
+
+nav ul li{
+    padding-left: 3rem;
+    list-style: none;
+    font-weight: 90px;
+    font-size: 15px;;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+nav ul li:hover{
+    color: #00ffff;
+}
+
+.subNavContainer{
+    background-color: #00ffff;
+    backdrop-filter: blur(30px);
+    height: 40px;
+    width: 100vw;
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    z-index: 8;
+    box-shadow: 1px 1px 10px black;
+    
+}
+
+.subNav{
+    position: relative;
+    min-width: 80vw;
+    height: 40px;
+   
+    z-index: 4;
+    
+   
+}
+.subNavContainer .userFeatures{
+       display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.userFeatures button{
+    width: 80px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-inline: 20px;
+}
+
+/*this is a sample for the other pages*/
+.container{
+   position: absolute;
+   width: 100vw;
+   height: 80vw;
+   margin-top: 80px;
+   align-self: center;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   /* background-color: rgb(10, 10, 58, 0.4); */
+
+}
+
+.container > div{
+    position: absolute;
+    max-width: 1100px;
+    height: auto;
+    border-radius: 30px;
+    color: white;
+    padding: 30px;
+
+
+
+    
+
+}
+
+.container >div:hover{
+    border-bottom: #00ffff 1px solid;
+    border-radius: 30px;
+}
+
+
+.one, .two, .three, .four, .five, .six , .seven{
+    width: auto;
+    padding: 50px;
+    padding-top: 180px;
+    inset: 0;
+    margin-inline: auto; 
+    height: 100vh;
+    overflow: scroll;
+    
+}
+
+
+ h1{
+    font-size: 50px;
+    color: #00ffff;
+    margin-bottom: 40px;
+    text-shadow: 0.5px 0.5px 8px  rgb(255, 255, 255,0.5);
+}
+
+a{
+    text-decoration: none;
+}
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+}
+.one h3{
+    font-size: 30px;
+   
+}
+.one >p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.one button{
+    position: relative;
+    display: block;
+    font-size: larger;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 120px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    width: 120px;
+    border: 0px;
+    background-color: #00ffff;
+}
+button:hover{
+    box-shadow: 1px 1px 8px #00ffff;
+
+}
+::-webkit-scrollbar{
+    opacity: 0;
+    display: none;
+} 
+
+.one .service{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+
+.items{
+    position: relative;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #00ffff;
+    margin: 10px ;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.items .title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: inherit;
+    border: 1px solid #00ffff;
+    border-radius: 30px 30px 0 0;
+    text-align: center;
+    transition: 0.5s;
+    color: #00ffff;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   
+
+}
+.items:nth-child(even):hover{
+    -ms-transform-origin-z: 20px;
+    box-shadow: 1px 1px 8px #00ffff;
+    transform: skewY(2deg);
+    cursor: pointer;
+
+}
+
+.items:nth-child(odd):hover{
+    box-shadow: 1px 1px 10px #00ffff;
+    transform: skewY(-2deg);
+    cursor: pointer;
+    
+}
+
+.items .title:hover{
+    background-image: linear-gradient(120deg, rgb(255, 255, 255, 0.2), rgb(0, 255, 255, 0.8));
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    
+
+}
+
+.items p{
+    position: absolute;
+
+    font-size: 13px;
+    padding-inline: 5px;
+    bottom: 10px;
+    
+}   
+
+
+
+
+
+/*this is the definitions for the stores page*/
+.three >div{
+    display: flex;
+    overflow: hidden;
+    height: inherit;
+    width: inherit;
+
+}
+
+
+.storeItems {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.three ul {
+    color: #00ffff;
+}
+
+.three ul ul li{
+    /* list-style: circle; */
+    padding-left: 20px;
+    border: 0px;
+    color: white;
+}
+
+
+
+/*this is the description for th jobs page*/
+.four >div{
+padding: 10px;
+height: inherit;
+overflow: scroll;
+}
+
+.four >div .jobPallet{
+    border-radius: 30px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    position: relative;
+    padding: 15px;
+    border: #00ffff 1px solid;
+    height: 50px;
+    overflow: hidden;
+    /* background-color: blue; */
+
+}
+
+.four >div  .jobPallet:hover{
+    backdrop-filter: blur(20px);
+    background-color: rgb(0, 255, 255,0.1);
+    box-shadow: 1px 1px 8px #00ffff;
+    cursor: pointer;
+
+}
+
+
+.four >div .jobPallet .jobTitle{
+    display: flex;
+    gap: 30px;
+}
+
+.four >div .jobPallet .jobTitle a{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    font-size: 30px;
+    top: 5px;
+}
+
+.four >div .jobPallet .jobDescription{
+    position: absolute;
+    left: 80px;
+    margin-top: 10px;
+    
+}
+
+
+
+.four button{
+    width: 70px;
+    border-radius: 30px;
+    padding: 5px 20px;
+    width: 100px;
+    background-color: transparent;
+    color: #00ffff;
+    font-size: 15px;
+    font-weight: bolder;
+    border: 1px solid #00ffff;
+    margin-top: 30px;
+
+}
+
+/*this is the definitions for the Howtos page / page 6*/
+
+.six >div{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    
+}
+#sideMenuHead {
+    position: relative;
+    top: 0px;
+    left: 30px;
+    /* margin: 30px; */
+    background-color: rgba(0, 255, 255, 0.8);
+    border-radius: 50%;
+    font-weight: bolder;
+    /* padding: 5px 20px; */
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 3;
+    width: 50px;
+    display: flex;
+
+}
+ #sideMenuHead img{
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    width: 30px;
+    height:  30px;
+    margin: 5px;
+
+}
+#sideMenuHead :nth-child(2){
+    display: none;
+}
+
+.sideMenu{
+    width: 30vw;
+    margin-top: 0px;
+    overflow: scroll;
+    height: 810px;
+    transition: 0.8s;
+    display: block; 
+}
+
+
+
+
+.sideMenu ul li{
+    list-style: none;
+    border-bottom: 1px solid hwb(180 0% 0%);
+    padding: 10px 10px;
+    margin-right: 10px;
+    font-size: 12px;
+
+}
+
+.sideMenu ul ul{
+    position: relative;
+    transition: 0.5s;
+}
+.sideMenu ul ul:hover {
+    border: #00ffff 1px solid;
+    margin: 2px;
+}
+
+.sideMenu ul ul li:hover{
+    background-image: linear-gradient(2400deg, rgb(255, 255, 255, 0), rgb(0, 255, 255, 0.4));
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+   
+
+
+}
+
+.mainMenu{
+    /* margin-top: 100px; */
+    width: 100vw;
+    padding: 20px;
+    overflow: scroll;
+    height: 810px;
+    border-radius: 30px;
+    
+}
+.six .mainMenu {
+    background-image: linear-gradient(240deg, rgb(255, 255, 255, 0), rgb(0, 255, 255, 0.4));
+
+}
+.mainMenu h3{
+    color: #00ffff;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*definitions for the contact page*/
+.seven >div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.seven .contactInfo{
+    /* background-color: rgb(13, 21, 21, 0.3); */
+    padding: 20px;
+    border-radius: 30px;
+    
+}
+
+.seven .contactInfo h3{
+    color: #00ffff;
+    margin-bottom: 10px;
+}
+
+.seven .contactInfo a{
+    color: #00ffff;
+    text-decoration: none;
+}
+
+.seven img{
+    margin: 20px 10px 0 0;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    background-color: #00ffff;
+    border-radius: 50%;
+
+}
+
+.sendMessage{
+    background-image: linear-gradient(120deg, rgb(255, 255, 255, 0), rgb(0, 255, 255, 0.4));
+    padding: 20px;
+    border-radius: 30px;
+    width: 400px;
+    backdrop-filter: blur(5px);
+}
+
+.sendMessage span{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.sendMessage input {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px #00ffff solid ;
+    color: white;
+    background-color: transparent;
+    margin: 20px 0px;
+    padding: 5px;
+
+}
+
+.sendMessage #checkbox{
+    width: 30px;
+    height: 30px;
+}
+
+.seven button{
+    display: block;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-weight: bolder;
+    border: 0px;
+    background-color: #00ffff;
+    margin-top: 10px;
+    margin-inline: auto;
+}
+
+.seven >button{
+    margin-top: 100px;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    background-color: #00ffff;
+    display: flex;
+
+}
+
+footer p{
+    color: black;
+    font-size: 13px;
+    bottom: 0px;
+    text-align: center;
+    margin-inline: auto;
+    align-self: center;
+    font-weight: bolder;
+}
+
+.active{
+    z-index: 4;    
+}
+
+.inactive{
+    z-index: -3;
+    
+}

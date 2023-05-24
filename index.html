@@ -1,257 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAR OF THE EAST SCHOOL COMPLEX</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>iFiX</title>
+    <link rel="stylesheet" href="./index.css">
+   
+   
 </head>
-
 <body>
-    <!-- this sectio describes the nav bar components of the home page -->
-    <div class="main_header">
-        <div class="navbar">
-            <div class="logo">
-                <img src="./images/SCHOOL LOGO REDEFINED.png" alt="">
-                <div class="school_name">
-                    <H3 id="sch_name">STAeeeR OF THE EAST</H3>
-                    <H3 id="inst_type">SCHOOL COMPLEX</H3>
+    <img class="filtered_background" src="./images/peakpx (3).jpg" alt="">
+        <header>
+            <nav>
+                <a href="#" id="one" onclick="makeActive(this)">
+                    <div class="logo">
+                        <img src="./images/IFIX LOGO.png" alt="logo">
+                        <p>COMPUTER REPAIRS AND SERVICES</span>
+                    </div>
+                </a>
+                <!-- <div class="navlinks"> -->
+                    <ul id="navlinks">
+                        <li id="one" onclick="makeActive(this)">Home</li>
+                        <!-- <li id="two" onclick="makeActive(this)">Services</li> -->
+                        <li id="three" onclick="makeActive(this)">Store</li>
+                        <li id="four" onclick="makeActive(this)">Jobs</li>
+                        <li id="five" onclick="makeActive(this)">Appointment</li>
+                        <li id="six" onclick="makeActive(this)">HowTo's</li>
+                        <li id="seven" onclick="makeActive(this)">Contact</li>
+                    </ul>
+                <!-- </div> -->
+            </nav>
+        </header>
+        <div class="subNavContainer">
+            <div class="subNav">
+                <div id="sideMenuHead">
+                    <span id="openSideMenu" onclick="openSideMenu()"><img src="./images/icons/navigation-menu.svg" alt=""></span>
+                    <span id="closeSideMenu" onclick="closeSideMenu()"><img src="./images/icons/close-circled.svg" alt=""></span>
                 </div>
             </div>
-            <div class="menu_list">
-                <ul id="menuList">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about_us">About Us</a></li>
-                    <!-- <li><a href="./nav__links/department.html">Departments</a></li> -->
-                    <li><a href="./nav__links/admission.html">Admission</a></li>
-                    <li><a href="./nav__links/alumni.html">Alumni</a></li>
-                    <li><a href="./nav__links/news.html">News</a></li>
-                    <li><a href="./nav__links/contact.html">Contact Us</a></li>
-
-
-                </ul>
-
-            </div>
-            <div class="menu-icon" onclick="togglemenu()">
-                <div class="menu-icon-bar" id="menuIconTop"></div>
-                <div class="menu-icon-bar" id="menuIconMiddle"></div>
-                <div class="menu-icon-bar" id="menuIconBottom"></div>
-            </div>
-
+           
         </div>
+        
+        <!--this is the parent class of all the pages-->
+        <div class="container">
+            <div class="one">
+                <h3>YOU BREAK IT</h3>
+                <h1>WE FIX IT</h1>
+                <p>Lorem ipsum dolor sit amet consectetur cidunt necessitatibus, assumenda obcaecati sed? Nobis porro, sapiente labore ex similique facere! Consectetur architecto quo, dicta neque quae animi dolores est rem.</P>
+                <button>FIX PC</button>
+                <br><br><br><br><br><br>
+               
+                <div class="service">
+                    <div class="items">
+                        <div class="title">
+                           <span> OS INSTALLATIONS</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                    </div>
+                    <div class="items">
+                        <div class="title">
+                            SOFTWARE ISSUES
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                    </div>
+                    <div class="items">
+                        <div class="title">
+                            TROUBLESHOOTING
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                    </div>
+                    <div class="items">
+                        <div class="title">
+                            DATA RECOVERY
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                    </div>
+                    <div class="items">
+                        <div class="title">
+                            NETWORKING AND INTERNET ISSUES
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                    </div>
+                    <div class="items">
+                        <div class="title">
+                            WINDOWS PASSWORD BYPASS
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                    </div>
+                    <div class="items">
+                        <div class="title">
+                            UPGRADE YOUR LAPTOP
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                    </div>
+                    <div class="items">
+                        <div class="title">
+                            LAPTOP ACCESSORIES
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
 
-
-    </div>
-    <div class="slide_container">
-
-        <h2>RAISING CHRISTLIKE CHILDREN</h2>
-        <P>Train the child the way he should go so that when he grows, he will not depart from it.</P>
-
-
-    </div>
-    <!-- admission notice  -->
-    <div class="admission_notice">
-        <h2>ADMISSION OPEN FOR 2023 ACADEMIC YEAR</h2>
-        <button><a href="./nav__links/admission.html">Enroll Now</a></button>
-    </div>
-    <div class="main">
-
-
-        <!-- this section defines the about us page  -->
-        <div class="about_us">
-
-            <h2 id="about_us" style="color: rgb(255, 255, 255);">#</h2>
-            <h2 id="about_us"> ---- ABOUT US ----</h2>
-            <div class="about_msg">
-                <div class="headmistress_image"></div>
-                <div class="about_text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam eos voluptatibus
-                        inventore ex
-                        nostrum enim debitis labore quae iure ut aperiam architecto ea natus, ipsa voluptatem quasi
-                        aliquam
-                        odio modi quis, incidunt consectetur! Iure nemo nihil veniam dolorum alias aspernatur quo illum
-                        repees as assumenda laborum praesentium molestiae quibusdam. uptatibus inventore ex
-                        nostrum enim debitis labore quae iure ut aperiam architecto ea natus, ipsa voluptatem quasi
-                        aliquam
-                        odio modi quis, incidunt consectetur! Iure nemo nih
-                        ncidunt consectetur! Iure nemo nihil veniam dolorum alias aspernatur quo illum
-                        repellendus assumenda laborum praesentium molestiae quibusdam. uptatibus inventore ex
-                        nostrum enim debitis labore quae iure ut aperiam architecto ea natus, ipsa voluptatem quasi
-                        aliquam
-
-                        accusantium voluptates assumenda laborum praesentium molestiae quibusdam. </p>
-
-                </div>
-            </div>
-        </div>
-        <br><br>
-
-
-        <!-- this section defines the mission and vision of the school -->
-        <h2 id="mission_vision"> Our Mission and Vision </h2>
-        <div class="mission_vision">
-
-            <div class="Mission">
-                <img src="./images/mission.png" alt="mission logo">
-                <h3>Mission</h3>
-                <p>Lorem ipsum dolor sit amet consectetur qui nam. Consequuntur
-                    praesentium, </p>
-            </div>
-            <div class="Vision">
-                <img src="./images/vision.png" alt="vision logo">
-                <h3>Vision</h3>
-                <p>Lorem ipsum dolor sit amet consectetur qui nam. Consequuntur
-                    praesentium,</p>
-            </div>
-
-        </div>
-
-        <br><br>
-
-
-
-
-        <!-- this section defines the core values of the school  -->
-        <h2 id="core_values"> ---- Our Core Values ---- </h2>
-        <div class="core_values">
-
-            <div class="value 1">
-                <img src="./images/service.webp" alt="service logo">
-                <h3>Service</h3>
-                <p>Lorem ipsum dolor sit amet consectetur qui nam. Consequuntur
-                    praesentium, et quidem deleniti eveniet harum iste?</p>
-            </div>
-
-            <div class="value 2">
-                <img src="./images/leadership.png" alt="leadership logo">
-                <h3>Leadership</h3>
-                <p>Lorem ipsum dolor sit amet consectetur qui nam. Consequuntur
-                    praesentium, et quidem deleniti eveniet harum iste?</p>
-            </div>
-            <div class="value 3">
-                <img src="./images/discipline.png" alt="discipline logo">
-                <h3>Discipline</h3>
-                <p>Lorem ipsum dolor sit amet consectetur qui nam. Consequuntur
-                    praesentium, et quidem deleniti eveniet harum iste?</p>
-            </div>
-            <div class="value 4">
-                <img src="./images/integrity.png" alt="integrity logo">
-                <h3>integrity</h3>
-                <p>Lorem ipsum dolor sit amet consectetur qui nam. Consequuntur
-                    praesentium, et quidem deleniti eveniet harum iste?</p>
-            </div>
-            <div class="value 5">
-                <img src="./images/excellence.webp" alt="Excellence logo">
-                <h3>Excellence</h3>
-                <p>Lorem ipsum dolor sit amet consectetur qui nam. Consequuntur
-                    praesentium, et quidem deleniti eveniet harum iste?</p>
-            </div>
-        </div>
-        <br><br>
-        <h2>Why Star Of The East?</h2>
-        <div class="why_star_of_the_east">
-
-            <div class="reason">
-                <div class="num1">
-                    <span>1</span>
-                </div>
-                <div class="reason1">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-            </div>
-            <div class="reason">
-                <div class="num2">
-                    <span>2</span>
-                </div>
-                <div class="reason2">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-            </div>
-            <div class="reason">
-                <div class="num3">
-                    <span>3</span>
-                </div>
-                <div class="reason3">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-            </div>
-            <div class="reason">
-                <div class="num4">
-                    <span>4</span>
-                </div>
-                <div class="reason4">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-            </div>
-            <div class="reason">
-                <div class="num5">
-                    <span>5</span>
-                </div>
-                <div class="reason5">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-            </div>
-
-        </div>
-        <div class="move_to_top">
-            <a href="#about_us">/\</a>
-        </div>
-    </div>
-    <footer>
-        <div class="inner_footer">
-            <div class="school_contact_info">
-                <div class="logo">
-                    <img src="./images/SCHOOL LOGO REDEFINED.png" alt="">
-                    <div class="school_name">
-                        <H3 id="sch_name">STAR OF THE EAST</H3>
-                        <H3 id="inst_type">SCHOOL COMPLEX</H3>
                     </div>
                 </div>
-                <br>
-                <h4>ADDRESS</h4>
-                <H4>MAIN CAMPUS, TAIFA NOWAY</H4>
-                <H4>BEHIND PRUDENTIAL BANK</H4>
-
-                <H4>TEL: 030 440 3030</H4>
-                <H4>EMAIL: staroftheeastschoolcomplex@gmail.com</H4>
             </div>
-            <br><br>
-            <div class="school_links">
-                <div class="navs">
-                    <ul>
-                        <li><a href="./nav__links/scholarships.html">Scholarships</a></li>
-                        <li><a href="./nav__links/exchange_programme.html">Exchange Programs</a></li>
-                        <li><a href="./nav__links/alumni.html">Alumni</a></li>
-                        <li><a href="./nav__links/gallery.html">School Gallery</a></li>
-                        <li><a href="./nav__links/news.html">News</a></li>
-                        <li><a href="./nav__links/Faqs.html">FAQS</a></li>
-                    </ul>
-                </div>
-                <h4>CONNECT WITH US</h4>
-                <div class="social_links">
-                    <a href=""><img src="./images/facebook.png" alt="facebook"></a>
-                    <a href=""><img src="./images/instagram.png" alt="instagram"></a>
-                    <a href=""><img src="./images/twitter.png" alt="twitter"></a>
-                    <a href="https://wa.me/qr/VEG2OVZKT65LH1"><img src="./images/whatsapp.png" alt="whatsapp"></a>
-                </div>
-                <br><br>
-                <div class="copyright_info">
-                    <h4>&copy; 2023 Star of The East School Complex</h4>
-                </div>
+            <div class="two">
+                <h2>this is the service page</h2>
+                
+
+
             </div>
 
 
+
+
+
+
+
+            <div class="three">
+                <h1>STORE</h1>             
+                <div>
+                    
+                    <div class="sideMenu" onscroll="darkenSideMenuHead()">
+                        
+                        
+                        <ul id="sideMenuList">
+                            <li style="font-weight: BOLDER;">BUY LAPTOPS
+                                <br>
+                                <ul>    
+                                    <li>LENOVO</li>
+                                    <li>HP</li>
+                                    <li>DELL</li>
+                                    <li>TOSHIBA</li>
+                                    <li>ASUS</li>
+                                    <li>SAMSUNG</li>
+                                    <li>ACER</li>
+                                </ul>
+                            </li>
+                            <li style="font-weight: BOLDER;">BUY ACCESSORIES
+                                <br>
+                                <ul>
+                                    <li>EXTERNAL MOUSE</li>
+                                    <li>EXTERNAL KEYBOARD</li>
+                                    <li>PENDRIVES & SD CARDS</li>
+                                    <li>USB ADAPTER</li>
+                                    <li>LAPTOP STANDS & COOLERS</li>
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li style="font-weight: BOLDER;">BUY SPARE PARTS
+                                <br>
+                                <ul>
+                                    <li>SCREEN</li>
+                                    <li>KEYBOARD</li>
+                                    <li>MOUSE PAD</li>
+                                    <li>NETWORK CARD</li>
+                                    <li>HARD DISK DRIVE (HDD)</li>
+                                    <li>SOLID STATE DRIVE (SSD)</li>
+                                    <li>BATTERY</li>
+                                    <li>CABLES</li>
+                                    
+
+                                </ul>
+                            </li>
+                                                  
+                        </ul>
+                    </div>  
+                    <div class="storeItems mainMenu">
+                        <div class="items">
+                            <div class="title">
+                                HARD DISK DRIVE (HDD)
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                        </div>
+                        <div class="items">
+                            <div class="title">
+                                SOLID STATE DRIVE
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                        </div>
+                        <div class="items">
+                            <div class="title">
+                                CHARGERS
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                        </div>
+                        <div class="items">
+                            <div class="title">
+                                STICKERS
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                        </div>
+                        <div class="items">
+                            <div class="title">
+                                ACCESSORIES
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                        </div>
+                        <div class="items">
+                            <div class="title">
+                                PENDRIVES AND CARDS
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                        </div>
+                        <div class="items">
+                            <div class="title">
+                                CABLES
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                        </div>
+                        <div class="items">
+                            <div class="title">
+                                SOMETHING
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!--this is the markup for the jobs page / page four (4)-->
+            <div class="four">
+                <h1>JOIN OUR TEAM TODAY</h1>
+                <h3>Choose one of the vaccancies below </h3>
+                <div>
+                    <div class="jobPallet" onclick="expandPallet(this)">
+                        <div class="jobTitle">
+                            <div class="toggleShowHide">
+                                <a href="#">+</a>
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                        </div> 
+                        <div class="jobDescription">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <div class="jobPallet"  onclick="expandPallet(this)">
+                        <div class="jobTitle">
+                            <div class="toggleShowHide">
+                                <a href="#">+</a> 
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                        </div> 
+                        <div class="jobDescription">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <div class="jobPallet" onclick="expandPallet(this)">
+                        <div class="jobTitle">
+                            <div class="toggleShowHide">
+                                <a href="#">+</a>
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                        </div> 
+                        <div class="jobDescription" >
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <div class="jobPallet" onclick="expandPallet(this)">
+                        <div class="jobTitle">
+                            <div class="toggleShowHide">
+                                <a href="#">+</a>
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                        </div> 
+                        <div class="jobDescription">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <div class="jobPallet" onclick="expandPallet(this)">
+                        <div class="jobTitle">
+                            <div class="toggleShowHide">
+                                <a href="#" >+</a>
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                        </div> 
+                        <div class="jobDescription">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <div class="jobPallet" onclick="expandPallet(this)">
+                        <div class="jobTitle">
+                            <div class="toggleShowHide">
+                                <a href="#">+</a> 
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                        </div> 
+                        <div class="jobDescription" onclick="expandPallet(this)">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <div class="jobPallet" onclick="expandPallet(this)">
+                        <div class="jobTitle">
+                            <div class="toggleShowHide">
+                                <a href="#">+</a>
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                        </div> 
+                        <div class="jobDescription">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <div class="jobPallet" onclick="expandPallet(this)">
+                        <div class="jobTitle">
+                            <div class="toggleShowHide">
+                                <a href="#">+</a> 
+                            </div>
+                            <h3>Lorem ipsum dolor sit amet.</h3>
+                        </div> 
+                        <div class="jobDescription" >
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                   
+
+                    
+                </div>
+            </div>
+
+            <div class="five">
+                <h1>TELL US YOUR PROBLEMS</h1>
+                <h2>Book an appointment </h2>
+                <div class="mainContainer">
+                    <label for="">Name</label>
+                    <input type="text" name="" id="">
+                    <br>
+                    <label for="">Email</label>
+                    <input type="text" name="" id="">
+                    <br>
+                    <label for="">Whatsapp / Telephone</label>
+                    <input type="text" name="" id="">
+                    <br>
+                    <label for="">Reason for Appointment</label>
+                    <input type="text" name="" id="">
+                    <br>
+                    <label for="">Name</label>
+                    <input type="text" name="" id="">
+
+                </div>
+            </div>
+
+            <div class="six">
+                
+                    <h1>Tips & Trix</h1>
+                    <div>
+                        <div class="sideMenu" onscroll="darkenSideMenuHead()">                          
+                           
+                            <ul id="sideMenuList">
+                                <li>BOOST PC PERFORMNCE</li>
+                                <li>CHECK SYSTEM HEALTH</li>
+                                <li>BATTERY AND POWER HEALTH</li>
+                                <li>DIAGNOSE NETWORK ISSUES</li>
+                                <li>CHECK SYSTEM INFO</li>
+                                <li>PARTITION DRIVES</li>
+                                <li>CHECK FOR BAD DRIVE SECTORS</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                                <li>CREATE BOOTABLE DRIVES</li>
+                              
+                            </ul>
+                        </div>
+                        <div class="mainMenu">
+                                <H3>BOOST PC PERFORMANCE</H3>
+                                
+                                <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur rerum quia hic. Ducimus natus fuga eos molestias sapiente explicabo. Itaque, id cupiditate rem quaerat ducimus praesentium rerum pariatur illo eligendi laboriosam vel nemo incidunt tempore explicabo. Ab dolor beatae ullam.</P>
+                                <br>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ex corrupti ullam excepturi et eaque sed quia expedita quos reprehenderit hic vel ducimus temporibus doloribus soluta, tempore optio. Vel, reiciendis atque autem eaque delectus repellat veniam excepturi, dolores architecto cum suscipit officia possimus quisquam at magnam dicta, corrupti amet commodi consequatur necessitatibus? Quia vero error quis sequi praesentium dolore ipsam minus? Voluptatem labore omnis itaque pariatur, possimus praesentium, ratione maiores accusamus ipsa quae, expedita culpa necessitatibus reiciendis fugit numquam nostrum a odit vitae beatae libero voluptas saepe deleniti delectus? Expedita suscipit ut nobis, facilis deserunt neque deleniti assumenda eius nemo?</p>
+                                <br>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ex corrupti ullam excepturi et eaque sed quia expedita quos reprehenderit hic vel ducimus temporibus doloribus soluta, tempore optio. Vel, reiciendis atque autem eaque delectus repellat veniam excepturi, dolores architecto cum suscipit officia possimus quisquam at magnam dicta, corrupti amet commodi consequatur necessitatibus? Quia vero error quis sequi praesentium dolore ipsam minus? Voluptatem labore omnis itaque pariatur, possimus praesentium, ratione maiores accusamus ipsa quae, expedita culpa necessitatibus reiciendis fugit numquam nostrum a odit vitae beatae libero voluptas saepe deleniti delectus? Expedita suscipit ut nobis, facilis deserunt neque deleniti assumenda eius nemo?</p>
+                                <br>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ex corrupti ullam excepturi et eaque sed quia expedita quos reprehenderit hic vel ducimus temporibus doloribus soluta, tempore optio. Vel, reiciendis atque autem eaque delectus repellat veniam excepturi, dolores architecto cum suscipit officia possimus quisquam at magnam dicta, corrupti amet commodi consequatur necessitatibus? Quia vero error quis sequi praesentium dolore ipsam minus? Voluptatem labore omnis itaque pariatur, possimus praesentium, ratione maiores accusamus ipsa quae, expedita culpa necessitatibus reiciendis fugit numquam nostrum a odit vitae beatae libero voluptas saepe deleniti delectus? Expedita suscipit ut nobis, facilis deserunt neque deleniti assumenda eius nemo?</p>
+                                <br>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ex corrupti ullam excepturi et eaque sed quia expedita quos reprehenderit hic vel ducimus temporibus doloribus soluta, tempore optio. Vel, reiciendis atque autem eaque delectus repellat veniam excepturi, dolores architecto cum suscipit officia possimus quisquam at magnam dicta, corrupti amet commodi consequatur necessitatibus? Quia vero error quis sequi praesentium dolore ipsam minus? Voluptatem labore omnis itaque pariatur, possimus praesentium, ratione maiores accusamus ipsa quae, expedita culpa necessitatibus reiciendis fugit numquam nostrum a odit vitae beatae libero voluptas saepe deleniti delectus? Expedita suscipit ut nobis, facilis deserunt neque deleniti assumenda eius nemo?</p>
+    
+                        </div>
+                    </div>
+            </div>
+
+            <div class="seven" >
+                <h1>How To Reach Us</h1>
+                <div>
+                    <div class="contactInfo">
+                        <h3>CONTACT DETAILS</h3>
+                        <p>MOBILE: +233 (0) 55 285 1039 ||| +233 (0) 50 798 9317</p>
+                        
+                        <p>Email: wgoku885@gmail.com</p>
+                        <p>YouTube: <a href="https://www.youtube.com/@ifix-knust-gh2504" target="_blank">iFiX-KNUST-GH</a></p>
+                        <div class="socialLinks">
+                            <a href="t.me/iFiX_COMPUTERS"><img src="./images/icons/telegram (1).svg" alt=""></a> 
+                            <a href="https://wa.me/qr/VEG2OVZKT65LH1" target="_blank"><img src="./images/icons/whatsapp (1).svg" alt=""></a>
+                            <img src="./images/icons/twitter.svg" alt="">
+                           
+                        </div>
+                        <br>
+                        <br>
+                        <h3>LOCATION</h3>
+                        <p>KNUST - CAMPUS</p>
+                        <p>GUSSS HOSTEL - NEW BRUNEI - FIRST FLOOR</p>
+                            <br>
+                            <br>
+                        <h3>WORKING HOURS</h3>
+                        <p>MONDAY - SATURDAY</p>
+                        <p>8:00 AM - 8:00 PM</p>
+                    </div>
+                    <div class="sendMessage">
+                        <span>Send us a message</span>
+                        <div>
+                           <form action="">
+                            <h4>Name:</h4>
+                            <input type="text" id="name">
+                            <h4>Email:</h4>
+                            <input type="text" id="email">
+                            <h4>Message:</h4>
+                            <input type="text"> <br>
+                            <button>Submit</button> <br>
+                            <input type="checkbox" id="checkbox">
+                            <h4>Send me weekly tips and info</h4>
+                           </form>
+                        </div>
+                    </div>
+                </div>
+                <button>Book Appointment</button>
+            </div>
         </div>
-    </footer>
+        
+        <footer>
+            <p> &copy; 2023  iFiX . All rights reserved.</p>
+        </footer>
+        <script src="./index.js"></script>
 
-    <script src="./main.js"></script>
 </body>
-</div>
-
-
-
-
-
 </html>
