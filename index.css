@@ -156,7 +156,7 @@ nav ul li:hover{
 .container > div{
     position: absolute;
     max-width: 1100px;
-    height: auto;
+    height: inherit;
     border-radius: 30px;
     color: white;
     padding: 30px;
