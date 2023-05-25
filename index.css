@@ -343,6 +343,14 @@ button:hover{
 }
 
 
+/*this is the description for the appointment*/
+
+
+
+
+
+
+
 
 /*this is the description for th jobs page*/
 .four >div{
@@ -601,7 +609,7 @@ overflow: scroll;
 .seven >button{
     position: relative;
     display: block;
-    font-size: larger;
+    font-size: 15;
     font-weight: bolder;
     margin: auto;
     margin-top: 120px;

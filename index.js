@@ -90,45 +90,6 @@ function makeActive(element){
 
 }
 
-
-      // let pageArray = [pageOne, pageTwo, pageThree, pageFour, pageFive];
-
-        // for (let i =0; i < pageArray.length; i++){
-        //     pageOne.className = "one";
-        //     pageTwo.className = "two";
-        //     pageThree.className = "three";
-        //     pageFour.className = "four";
-        //     pageFive.className = "five"; 
-        //     pageArray = [pageOne, pageTwo, pageThree, pageFour, pageFive];
-        //     if(element.id === pageArray[i]) {
-        //         pageArray[i].className += " active";
-        //         break;
-        //     }
-        //     else{
-        //         pageArray[i].className += " inactive";
-        //     }
-
-        // }
-
-
-
-        //this is the decriptions on the HowTo Page
-
- 
-        // function darkenSideMenuHead(){
-        //     Array.from(document.querySelectorAll(".sideMenu")).forEach(darkenOnScroll)
-            
-            
-        // }
-
-        // function darkenOnScroll(element){
-        //    Array.from(document.querySelectorAll("#sideMenuHead")).forEach(changeColor);
-        // }
-        // function changeColor(element){
-        //     element.style.backgroundColor = "#00ffff";
-        // }
-
-
     
 //function to show side menu
 Array.from(document.querySelectorAll("#closeSideMenu")).forEach(showIcon)
@@ -178,7 +139,7 @@ Array.from(document.querySelectorAll("#openSideMenu")).forEach(hideIcon)
     
     function expandPallet(element){
         if (element.style.height === "50px"){
-            element.style.height = "200px";
+            element.style.height = "250px";
             // element.firstChild.firstChild.firstChild.innerHTML = "-";
         }
         else {
