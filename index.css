@@ -107,7 +107,6 @@ nav ul li:hover{
     backdrop-filter: blur(30px);
     height: 40px;
     width: inherit;
-    /* top: 380px; */
     display: flex;
     justify-content: center;
     z-index: 10;
@@ -139,7 +138,7 @@ nav ul li:hover{
 /*this is a sample for the other pages*/
 .container{
    position: relative;
-   width: 1200px;
+   max-width: 1200px;
    height: auto;
    padding-top: 180px;
    margin-inline: auto;
@@ -147,15 +146,13 @@ nav ul li:hover{
    overflow: hidden;
    display: flex;
    flex-direction: column;
-   /* justify-content: center; */
    z-index: 9;
-   background-color: rgb(10, 10, 58, 0.4);
 
 }
 
 .container > div{
     position: relative;
-    max-width: 1800px;
+    max-width: inherit;
     height: auto;
     border-radius: 30px;
     color: white;
@@ -169,17 +166,11 @@ nav ul li:hover{
 
 }
 
-.container >div:hover{
-    border-bottom: #00ffff 1px solid;
-    border-radius: 30px;
-}
-
 
 .one, .two, .three, .four, .five, .six , .seven{
     width: auto;
-    padding: 50px;
     padding-top: 180px;
-    inset: 0;
+    /* inset: 0; */
     margin-inline: auto; 
     height: auto;
     overflow: scroll;
@@ -306,7 +297,6 @@ button:hover{
 
 .items p{
     position: absolute;
-
     font-size: 13px;
     padding-inline: 5px;
     bottom: 10px;
@@ -338,7 +328,6 @@ button:hover{
 }
 
 .three ul ul li{
-    /* list-style: circle; */
     padding-left: 20px;
     border: 0px;
     color: white;
@@ -362,7 +351,6 @@ overflow: scroll;
     border: #00ffff 1px solid;
     height: 50px;
     overflow: hidden;
-    /* background-color: blue; */
 
 }
 
@@ -415,7 +403,7 @@ overflow: scroll;
 
 .six >div{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     
     
 }
@@ -429,7 +417,6 @@ overflow: scroll;
     cursor: pointer;
     transition: 0.3s;
     z-index: 11;
-
     display: flex;
 
 }
@@ -448,7 +435,7 @@ overflow: scroll;
 
 .sideMenu{
     width: 30vw;
-    margin-right: 10px;
+    margin-right: 40px;
     overflow: scroll;
     height: auto;
     transition: 0.8s;
@@ -518,6 +505,7 @@ overflow: scroll;
 .seven >div{
     display: flex;
     justify-content: space-between;
+    gap: 100px;
 
 }
 
@@ -595,6 +583,12 @@ overflow: scroll;
     margin-top: 100px;
 }
 
+.seven #checkbox {
+    width: 15px;
+    height: 15px;
+    display: inline;
+    
+}
 footer{
     position: relative;
     width: 100%;
@@ -608,18 +602,17 @@ footer{
 footer p{
     color: black;
     font-size: 13px;
-    bottom: 0px;
     text-align: center;
     margin-inline: auto;
     align-self: center;
     font-weight: bolder;
 }
 
-.active{
+/* .active{
     z-index: 4;    
 }
 
 .inactive{
     z-index: -3;
     
-}
+} */
