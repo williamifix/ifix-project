@@ -153,7 +153,7 @@ Array.from(document.querySelectorAll("#openSideMenu")).forEach(hideIcon)
 
 
         function toggleShow (element){
-            element.style.width = "30vw";
+            element.style.display = "block";
 
         }
 
@@ -167,7 +167,7 @@ Array.from(document.querySelectorAll("#openSideMenu")).forEach(hideIcon)
         }
 
         function toggleHide (element){
-            element.style.width = "0vw";
+            element.style.display = "none";
         }
 
         

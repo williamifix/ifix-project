@@ -139,14 +139,15 @@ nav ul li:hover{
 /*this is a sample for the other pages*/
 .container{
    position: relative;
-   width: auto;
+   width: 1200px;
    height: auto;
-   margin-top: 80px;
+   padding-top: 180px;
+   margin-inline: auto;
    align-self: center;
    overflow: hidden;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   /* justify-content: center; */
    z-index: 9;
    background-color: rgb(10, 10, 58, 0.4);
 
