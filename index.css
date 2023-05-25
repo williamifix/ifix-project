@@ -11,17 +11,14 @@ body{
     background-repeat: no-repeat;
     color: white;
     font-family: 'Poppins', sans-serif;
-    position: relative;
-
+   
    
 }
+
 .filtered_background{
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: fixed;
     animation-name: bodybackground;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -43,7 +40,7 @@ header{
     position: fixed;
     display: flex;
     justify-content: center;
-    z-index: 3;
+    z-index: 10;
 
   
 }
@@ -55,7 +52,7 @@ nav{
     justify-content: space-between;
     min-width: 80vw;
     overflow: hidden;
-    min-height: 80px;
+    height: 80px;
    
   
    
@@ -104,15 +101,16 @@ nav ul li:hover{
 }
 
 .subNavContainer{
+    position: sticky;
+    top: 80px;
     background-color: #00ffff;
     backdrop-filter: blur(30px);
     height: 40px;
-    width: 100vw;
-    position: relative;
-    top: 80px;
+    width: inherit;
+    /* top: 380px; */
     display: flex;
     justify-content: center;
-    z-index: 8;
+    z-index: 10;
     box-shadow: 1px 1px 10px black;
     
 }
@@ -121,8 +119,7 @@ nav ul li:hover{
     position: relative;
     min-width: 80vw;
     height: 40px;
-   
-    z-index: 4;
+  
     
    
 }
@@ -141,25 +138,29 @@ nav ul li:hover{
 
 /*this is a sample for the other pages*/
 .container{
-   position: absolute;
-   width: 100vw;
-   height: 80vw;
+   position: relative;
+   width: auto;
+   height: auto;
    margin-top: 80px;
    align-self: center;
    overflow: hidden;
    display: flex;
+   flex-direction: column;
    justify-content: center;
-   /* background-color: rgb(10, 10, 58, 0.4); */
+   z-index: 9;
+   background-color: rgb(10, 10, 58, 0.4);
 
 }
 
 .container > div{
-    position: absolute;
-    max-width: 1100px;
-    height: inherit;
+    position: relative;
+    max-width: 1800px;
+    height: auto;
     border-radius: 30px;
     color: white;
     padding: 30px;
+    z-index: 9;
+    margin-bottom: 300px;
 
 
 
@@ -179,7 +180,7 @@ nav ul li:hover{
     padding-top: 180px;
     inset: 0;
     margin-inline: auto; 
-    height: 100vh;
+    height: auto;
     overflow: scroll;
     
 }
@@ -301,6 +302,7 @@ button:hover{
 
 }
 
+
 .items p{
     position: absolute;
 
@@ -346,7 +348,7 @@ button:hover{
 /*this is the description for th jobs page*/
 .four >div{
 padding: 10px;
-height: inherit;
+height: auto;
 overflow: scroll;
 }
 
@@ -413,22 +415,20 @@ overflow: scroll;
 .six >div{
     display: flex;
     justify-content: center;
-    gap: 4%;
+    
     
 }
 #sideMenuHead {
     position: relative;
     top: 0px;
     left: 30px;
-    /* margin: 30px; */
-    background-color: rgba(0, 255, 255, 0.8);
+    background-color: rgba(19, 39, 39, 0.8);
     border-radius: 50%;
     font-weight: bolder;
-    /* padding: 5px 20px; */
     cursor: pointer;
     transition: 0.3s;
-    z-index: 3;
-    width: 50px;
+    z-index: 11;
+
     display: flex;
 
 }
@@ -446,10 +446,10 @@ overflow: scroll;
 }
 
 .sideMenu{
-    width: 30vw;
-    margin-top: 0px;
+    min-width: auto;
+    margin-right: 10px;
     overflow: scroll;
-    height: 810px;
+    height: auto;
     transition: 0.8s;
     display: block; 
 }
@@ -486,11 +486,10 @@ overflow: scroll;
 }
 
 .mainMenu{
-    /* margin-top: 100px; */
-    width: 100vw;
+    width: 100%;
     padding: 20px;
     overflow: scroll;
-    height: 810px;
+    height: auto;
     border-radius: 30px;
     
 }
@@ -595,7 +594,7 @@ overflow: scroll;
 }
 
 footer{
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 30px;
     bottom: 0;
