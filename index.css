@@ -178,7 +178,10 @@ nav ul li:hover{
     overflow: scroll;
     
 }
-
+strong{
+    color: #00ffff;
+    font-size: 100px;
+}
 
  h1{
     font-size: 50px;
@@ -187,7 +190,9 @@ nav ul li:hover{
     text-shadow: 0.5px 0.5px 8px  rgb(255, 255, 255,0.5);
     text-align: center;
 }
-
+h1 strong{
+    color: white;
+}
 a{
     text-decoration: none;
 }
