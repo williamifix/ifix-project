@@ -1,4 +1,5 @@
-   
+
+
 //function to show side menu
 Array.from(document.querySelectorAll("#closeSideMenu")).forEach(showIcon)
 Array.from(document.querySelectorAll("#openSideMenu")).forEach(hideIcon)
@@ -39,20 +40,24 @@ openSideMenu()
             element.style.display = "none";
         }
 
-        
 
 
+Array.from(document.querySelectorAll(".jobPallet")).forEach(setHeight);
+function setHeight (element){
+    element.style.height = "50px";
+}
 
     //this function works around the job pallets
-    
+   setHeight()
     function expandPallet(element){
+
         if (element.style.height === "50px"){
             element.style.height = "250px";
-            // element.firstChild.firstChild.firstChild.innerHTML = "-";
+            element.firstChild.atyle.innerHTML = "-"
         }
         else {
             element.style.height = "50px";
-            // element.firstChild.firstChild.firstChild.innerHTML = "-";
+            element.firstChild.innerHTML = "+"
 
         }
     }

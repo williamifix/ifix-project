@@ -43,7 +43,7 @@ body{
 header{
     background-color: rgb(4, 9, 15, 0.4);
     backdrop-filter: blur(30px);
-    height: 80px;
+    height: auto;
     width: 100vw;
     position: fixed;
     display: flex;
@@ -60,7 +60,7 @@ nav{
     justify-content: space-between;
     min-width: 80vw;
     overflow: hidden;
-    height: 80px;
+    height: 120px;
     margin-inline: 20px;
    
   
@@ -120,20 +120,22 @@ nav >img{
 }
 
 .signInUp{
-    /* background-color: #00ffff; */
     display: flex;
     align-items: center;
     margin-left: 20px;
+    /* background-color: #00ffff; */
 }
 
 nav button{
+    position: absolute
+    top: 0px;
     width: 100px;
     height: 30px;
     background-color: transparent;
     color: white;
     border: 1px solid #00ffff;
     border-radius: 30px;
-    margin: 10px;
+    /* margin: 10px; */
     font-weight: bolder;
 }
 
@@ -143,7 +145,7 @@ nav button{
 
 .subNavContainer{
     position: sticky;
-    top: 80px;
+    top: 100px;
     background-color: rgb(0, 255, 255);
     backdrop-filter: blur(30px);
     height: 40px;
@@ -199,7 +201,7 @@ nav button{
     color: white;
     padding: 30px;
     z-index: 9;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     /* margin-inline: 20px; */
 
 
@@ -209,9 +211,9 @@ nav button{
 }
 
 
-.one, .two, .three, .four, .five, .six , .seven{
+.home, .services, .store, .jobs, .appointment, .howTo , .contact{
     width: auto;
-    padding-top: 0px;
+    padding-top: 150px;
     margin-inline: auto; 
     height: auto;
     overflow: scroll;
@@ -229,7 +231,7 @@ nav button{
  h1{
     font-size: 90px;
     color: #00ffff;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     text-shadow: 0.5px 0.5px 8px  rgb(255, 255, 255,0.5);
     text-align: center;
     
@@ -248,7 +250,7 @@ nav button{
     top: -10px;
     margin-left: 30px;
     animation: wine;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -266,7 +268,7 @@ nav button{
     background-color: #35d8d8;
     bottom: -9px;
     animation: wine;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -294,22 +296,22 @@ a{
     text-decoration: none;
 }
 
-p {
+.home p {
     font-size: 15px;
     line-height: 25px;
     text-align: center;
 }
-.one h3{
+.home h3{
     font-size: 30px;
     text-align: center;
    
 }
-.one >p{
+.home >p{
     font-size: 20px;
     line-height: 30px;
 }
 
-.one button{
+.home button{
     position: relative;
     display: block;
     font-size: larger;
@@ -331,7 +333,7 @@ button:hover{
     display: none;
 } 
 
-.one .service{
+.home .service{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -416,7 +418,7 @@ button:hover{
 
 
 /*this is the definitions for the stores page*/
-.three >div{
+.store >div{
     display: flex;
     overflow: hidden;
     height: inherit;
@@ -431,18 +433,18 @@ button:hover{
     flex-wrap: wrap;
     overflow: hidden;
 }
-.three ul {
+.store ul {
     color: #00ffff;
 }
 
-.three ul ul li{
+.store ul ul li{
     padding-left: 20px;
     border: 0px;
     color: white;
 }
 
 
-/*this is the description for the appointment*/
+/*this is the description for the jobs*/
 
 
 
@@ -452,13 +454,13 @@ button:hover{
 
 
 /*this is the description for th jobs page*/
-.four >div{
+.jobs >div{
 padding: 10px;
 height: auto;
 overflow: scroll;
 }
 
-.four >div .jobPallet{
+.jobs >div .jobPallet{
     border-radius: 30px;
     margin-bottom: 30px;
     transition: 0.5s;
@@ -470,7 +472,7 @@ overflow: scroll;
 
 }
 
-.four >div  .jobPallet:hover{
+.jobs >div  .jobPallet:hover{
     backdrop-filter: blur(20px);
     background-color: rgb(0, 255, 255,0.1);
     box-shadow: 1px 1px 8px #00ffff;
@@ -479,12 +481,12 @@ overflow: scroll;
 }
 
 
-.four >div .jobPallet .jobTitle{
+.jobs >div .jobPallet .jobTitle{
     display: flex;
     gap: 30px;
 }
 
-.four >div .jobPallet .jobTitle a{
+.jobs >div .jobPallet .jobTitle a{
     color: white;
     text-decoration: none;
     position: absolute;
@@ -492,7 +494,7 @@ overflow: scroll;
     top: 5px;
 }
 
-.four >div .jobPallet .jobDescription{
+.jobs >div .jobPallet .jobDescription{
     position: absolute;
     left: 60px;
     margin-top: 10px;
@@ -502,7 +504,7 @@ overflow: scroll;
 
 
 
-.four button{
+.jobs button{
     width: 70px;
     border-radius: 30px;
     padding: 5px 20px;
@@ -518,7 +520,7 @@ overflow: scroll;
 
 /*this is the definitions for the Howtos page / page 6*/
 
-.six >div{
+.howTo >div{
     display: flex;
     justify-content: space-between;
     
@@ -598,10 +600,12 @@ overflow: scroll;
     overflow: scroll;
     height: auto;
     border-radius: 30px;
+    background-image: linear-gradient(240deg, rgb(255, 255, 255, 0), rgb(0, 255, 255, 0.4));
+    padding: 50px;
     
 }
-.six .mainMenu {
-    background-image: linear-gradient(240deg, rgb(255, 255, 255, 0), rgb(0, 255, 255, 0.4));
+.howTo .mainMenu {
+    
 
 }
 .mainMenu h3{
@@ -610,7 +614,7 @@ overflow: scroll;
     font-size: 30px;
 }
 
-.six p{
+.howTo p{
     font-size: 13px;
     text-align: left;
     
@@ -625,7 +629,7 @@ overflow: scroll;
 
 
 /*definitions for the contact page*/
-.seven >div{
+.contact >div{
     display: flex;
     justify-content: space-between;
     gap: 100px;
@@ -633,24 +637,26 @@ overflow: scroll;
 
 }
 
-.seven .contactInfo{
+.contact .contactInfo{
     /* background-color: rgb(13, 21, 21, 0.3); */
     padding: 20px;
     border-radius: 30px;
     
 }
 
-.seven .contactInfo h3{
+.contact .contactInfo h3{
     color: #00ffff;
     margin-bottom: 10px;
 }
 
-.seven .contactInfo a{
+.contact .contactInfo a{
     color: #00ffff;
     text-decoration: none;
 }
-
-.seven img{
+.contactInfo p{
+    text-align: left;
+}
+.contact img{
     margin: 20px 10px 0 0;
     width: 30px;
     height: 30px;
@@ -692,7 +698,7 @@ overflow: scroll;
     height: 30px;
 }
 
-.seven button{
+.contact button{
     position: absolute;
     display: block;
     padding: 5px 20px;
@@ -703,7 +709,7 @@ overflow: scroll;
     
 }
 
-.seven #checkbox {
+.contact #checkbox {
     width: 15px;
     height: 15px;
     display: inline;
@@ -711,7 +717,7 @@ overflow: scroll;
 }
 
 
-.seven >button{
+.contact >button{
     position: relative;
     display: block;
     font-size: 15;
@@ -758,7 +764,7 @@ footer p{
 
 /*media queries*/
 @media screen and (max-width: 768px){
-    .seven >div{
+    .contact >div{
         display: flex;
         flex-direction: column;
         /* justify-content: space-between; */
