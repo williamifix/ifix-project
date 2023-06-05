@@ -127,7 +127,7 @@ nav >img{
 }
 
 nav button{
-    position: absolute
+    position: absolute;
     top: 0px;
     width: 100px;
     height: 30px;
@@ -604,10 +604,7 @@ overflow: scroll;
     padding: 50px;
     
 }
-.howTo .mainMenu {
-    
 
-}
 .mainMenu h3{
     color: #00ffff;
     padding-bottom: 10px;

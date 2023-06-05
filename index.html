@@ -1,469 +1,559 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iFiX</title>
-    <link rel="stylesheet" href="./index.css">
-   
-   
-</head>
-<body>
-    <div class="shader">
-        
-    </div>
-    <img class="filtered_background" src="./images/peakpx (3).jpg" alt="">
-        <header>
-            <nav>
-                <a href="#" id="home" onclick="makeActive(this)">
-                    <div class="logo">
-                        <img src="./images/IFIX LOGO.png" alt="logo">
-                        <p>COMPUTER SERVICES</span>
-                    </div>
-                </a>
-                <!-- <div class="navlinks"> -->
-                    <ul id="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#store">Store</a></li>
-                        <li><a href="#jobs">Jobs</a></li>
-                        <li><a href="#appointment">Appointment</a></li>
-                        <li><a href="#howTo">HowTo's</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <!-- <img id="navigation-menu" onclick="showNav" src="./images/icons/navigation-menu.svg" alt="">
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="shader"></div>
+    <img class="filtered_background" src="./images/peakpx (3).jpg" alt="" />
+    <header>
+      <nav>
+        <a href="#" id="home" onclick="makeActive(this)">
+          <div class="logo">
+            <img src="./images/IFIX LOGO.png" alt="logo" />
+            <p>COMPUTER SERVICES</p>
+          </div>
+        </a>
+        <!-- <div class="navlinks"> -->
+        <ul id="navlinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#store">Store</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#appointment">Appointment</a></li>
+          <li><a href="#howTo">HowTo's</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- <img id="navigation-menu" onclick="showNav" src="./images/icons/navigation-menu.svg" alt="">
                     <img id="close-circled" onclick="hideNav" src="./images/icons/close-circled.svg" alt=""> -->
-                <!-- </div> -->
-                <div class="signInUp">
-                    <button>sign in</button>
-                    <button>sign Up</button>
-                </div>
-            </nav>
-        </header>
-        <div class="subNavContainer">
-            <div class="subNav">
-                <div id="sideMenuHead">
-                    <span id="openSideMenu" onclick="openSideMenu()"><img src="./images/icons/navigation-menu.svg" alt=""></span>
-                    <span id="closeSideMenu" onclick="closeSideMenu()"><img src="./images/icons/close-circled.svg" alt=""></span>
-                </div>
-            </div>
+        <!-- </div> -->
+        <div class="signInUp">
+          <button>sign in</button>
+          <button>sign Up</button>
         </div>
-        
-        <!--this is the parent class of all the pages-->
-        <div class="container">
-            <div class="home" id="home">
-               <div class="home">
-                <h3>YOU BREAK IT <strong>?</strong></h3>
-                <h1>WE FIX IT   <div class="bulb">   <div id="inner" > </div></div></h1>
-                <p>Welcome to <b>iFiX</b>, your trusted computer repair experts. We provide top-notch services for individuals and businesses, from software and hardware troubleshooting to virus removal and data recovery. With our skilled technicians and commitment to customer satisfaction, we deliver efficient and affordable solutions. Visit our website as often as you wish to learn more and schedule an appointment today.</P>
-                <button>FIX PC</button>
-                
+      </nav>
+    </header>
+    <div class="subNavContainer">
+      <div class="subNav">
+        <div id="sideMenuHead">
+          <span id="openSideMenu" onclick="openSideMenu()"
+            ><img src="./images/icons/navigation-menu.svg" alt=""
+          /></span>
+          <span id="closeSideMenu" onclick="closeSideMenu()"
+            ><img src="./images/icons/close-circled.svg" alt=""
+          /></span>
+        </div>
+      </div>
+    </div>
 
-                
-
-
-               </div>
-               <h1>WHAT WE OFFER</h1>
-                <div class="service" id="services">
-
-                    <div class="items">
-                        <div class="title">
-                           <span> OS INSTALLATIONS</span>
-                        </div>
-                        <p>We install various operating systems to suit your needs as a student, professional, or company. <br><br> WINDOWS, LINUX DISTROS, MACOS</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">
-                            APP INSTALLATIONS
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">
-                            PC TROUBLESHOOTING
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">
-                            DATA RECOVERY
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">
-                            NEservicesRKING AND INTERNET ISSUES
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">
-                            WINDOWS PASSWORD BYPASS
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">
-                            UPGRADE YOUR LAPTOP
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">
-                            LAPTOP ACCESSORIES
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">
-                            VIRUS AND MALWARE ATTACK
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">
-                            HARDWARE REPAIRS 
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">
-                            HARDWARE REPLACEMENT
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                    </div>
-                    <div class="items">
-                        <div class="title">
-                            LAPTOP ACCESSORIES
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                    </div>
-                    
-                </div>
+    <!--this is the parent class of all the pages-->
+    <div class="container">
+      <div class="home" id="home">
+        <div class="home">
+          <?php 
+            echo "helo world";
+          ?>
+          <h3>YOU BREAK IT <strong>?</strong></h3>
+          <h1>
+            WE FIX IT
+            <div class="bulb"><div id="inner"></div></div>
+          </h1>
+          <p>
+            Welcome to <b>iFiX</b>, your trusted computer repair experts. We
+            provide top-notch services for individuals and businesses, from
+            software and hardware troubleshooting to virus removal and data
+            recovery. With our skilled technicians and commitment to customer
+            satisfaction, we deliver efficient and affordable solutions. Visit
+            our website as often as you wish to learn more and schedule an
+            appointment today.
+          </p>
+          <button>FIX PC</button>
+        </div>
+        <h1>WHAT WE OFFER</h1>
+        <div class="service" id="services">
+          <div class="items">
+            <div class="title">
+              <span> OS INSTALLATIONS</span>
             </div>
-            <!-- <div class="services" id="services">
+            <p>
+              We install various operating systems to suit your needs as a
+              student, professional, or company. <br /><br />
+              WINDOWS, LINUX DISTROS, MACOS
+            </p>
+          </div>
+          <div class="items">
+            <div class="title">APP INSTALLATIONS</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestiae magni a quas minima corrupti!
+            </p>
+          </div>
+          <div class="items">
+            <div class="title">PC TROUBLESHOOTING</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestiae magni a quas minima corrupti!
+            </p>
+          </div>
+          <div class="items">
+            <div class="title">DATA RECOVERY</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestiae magni a quas minima corrupti!
+            </p>
+          </div>
+          <div class="items">
+            <div class="title">NEservicesRKING AND INTERNET ISSUES</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestiae magni a quas minima corrupti!
+            </p>
+          </div>
+          <div class="items">
+            <div class="title">WINDOWS PASSWORD BYPASS</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestiae magni a quas minima corrupti!
+            </p>
+          </div>
+          <div class="items">
+            <div class="title">UPGRADE YOUR LAPTOP</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestiae magni a quas minima corrupti!
+            </p>
+          </div>
+          <div class="items">
+            <div class="title">LAPTOP ACCESSORIES</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestiae magni a quas minima corrupti!
+            </p>
+          </div>
+          <div class="items">
+            <div class="title">VIRUS AND MALWARE ATTACK</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestiae magni a quas minima corrupti!
+            </p>
+          </div>
+          <div class="items">
+            <div class="title">HARDWARE REPAIRS</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestiae magni a quas minima corrupti!
+            </p>
+          </div>
+          <div class="items">
+            <div class="title">HARDWARE REPLACEMENT</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestiae magni a quas minima corrupti!
+            </p>
+          </div>
+          <div class="items">
+            <div class="title">LAPTOP ACCESSORIES</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestiae magni a quas minima corrupti!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="services" id="services">
                 <h2>this is the service page</h2>
             </div> -->
 
-
-
-
-
-
-
-            <div class="store" id="store">
-                <h1>STORE</h1>             
-                <div>
-                    
-                    <div class="sideMenu" onscroll="darkenSideMenuHead()">
-                        
-                        
-                        <ul id="sideMenuList">
-                            <li style="font-weight: BOLDER;">BUY LAPTOPS
-                                <br>
-                                <ul>    
-                                    <li>LENOVO</li>
-                                    <li>HP</li>
-                                    <li>DELL</li>
-                                    <li>TOSHIBA</li>
-                                    <li>ASUS</li>
-                                    <li>SAMSUNG</li>
-                                    <li>ACER</li>
-                                </ul>
-                            </li>
-                            <li style="font-weight: BOLDER;">BUY ACCESSORIES
-                                <br>
-                                <ul>
-                                    <li>EXTERNAL MOUSE</li>
-                                    <li>EXTERNAL KEYBOARD</li>
-                                    <li>PENDRIVES & SD CARDS</li>
-                                    <li>USB ADAPTER</li>
-                                    <li>LAPTOP STANDS & COOLERS</li>
-                                    <li></li>
-                                </ul>
-                            </li>
-                            <li style="font-weight: BOLDER;">BUY SPARE PARTS
-                                <br>
-                                <ul>
-                                    <li>SCREEN</li>
-                                    <li>KEYBOARD</li>
-                                    <li>MOUSE PAD</li>
-                                    <li>NEservicesRK CARD</li>
-                                    <li>HARD DISK DRIVE (HDD)</li>
-                                    <li>SOLID STATE DRIVE (SSD)</li>
-                                    <li>BATTERY</li>
-                                    <li>CABLES</li>
-                                    
-
-                                </ul>
-                            </li>
-                                                  
-                        </ul>
-                    </div>  
-                    <div class="storeItems mainMenu">
-                        <div class="items">
-                            <div class="title">
-                                HARD DISK DRIVE (HDD)
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                        </div>
-                        <div class="items">
-                            <div class="title">
-                                SOLID STATE DRIVE
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                        </div>
-                        <div class="items">
-                            <div class="title">
-                                CHARGERS
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                        </div>
-                        <div class="items">
-                            <div class="title">
-                                STICKERS
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                        </div>
-                        <div class="items">
-                            <div class="title">
-                                ACCESSORIES
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                        </div>
-                        <div class="items">
-                            <div class="title">
-                                PENDRIVES AND CARDS
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                        </div>
-                        <div class="items">
-                            <div class="title">
-                                CABLES
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                        </div>
-                        <div class="items">
-                            <div class="title">
-                                SOMETHING
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae magni a quas minima corrupti!</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="store" id="store">
+        <h1>STORE</h1>
+        <div>
+          <div class="sideMenu" onscroll="darkenSideMenuHead()">
+            <ul id="sideMenuList">
+              <li style="font-weight: BOLDER">
+                BUY LAPTOPS
+                <br />
+                <ul>
+                  <li>LENOVO</li>
+                  <li>HP</li>
+                  <li>DELL</li>
+                  <li>TOSHIBA</li>
+                  <li>ASUS</li>
+                  <li>SAMSUNG</li>
+                  <li>ACER</li>
+                </ul>
+              </li>
+              <li style="font-weight: BOLDER">
+                BUY ACCESSORIES
+                <br />
+                <ul>
+                  <li>EXTERNAL MOUSE</li>
+                  <li>EXTERNAL KEYBOARD</li>
+                  <li>PENDRIVES & SD CARDS</li>
+                  <li>USB ADAPTER</li>
+                  <li>LAPTOP STANDS & COOLERS</li>
+                  <li></li>
+                </ul>
+              </li>
+              <li style="font-weight: BOLDER">
+                BUY SPARE PARTS
+                <br />
+                <ul>
+                  <li>SCREEN</li>
+                  <li>KEYBOARD</li>
+                  <li>MOUSE PAD</li>
+                  <li>NEservicesRK CARD</li>
+                  <li>HARD DISK DRIVE (HDD)</li>
+                  <li>SOLID STATE DRIVE (SSD)</li>
+                  <li>BATTERY</li>
+                  <li>CABLES</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="storeItems mainMenu">
+            <div class="items">
+              <div class="title">HARD DISK DRIVE (HDD)</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                molestiae magni a quas minima corrupti!
+              </p>
             </div>
-
-
-
-
-
-
-            <!--this is the markup for the jobs page / page jobs (4)-->
-            <div class="jobs" id="jobs">
-                <h1>JOIN OUR TEAM TODAY</h1>
-                <h3>Apply to any home of the vaccancies below </h3>
-                <div>
-                    <div class="jobPallet" onclick="expandPallet(this)">
-                        <div class="jobTitle">
-                            <div class="toggleShowHide">
-                                <a href="#">+</a>
-                            </div>
-                            <h3>SOCIAL MEDIA MARKETTING</h3>
-                        </div> 
-                        <div class="jobDescription">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
-                            <button>Apply</button>
-                        </div>
-                    </div>
-                    <div class="jobPallet"  onclick="expandPallet(this)">
-                        <div class="jobTitle">
-                            <div class="toggleShowHide">
-                                <a href="#">+</a> 
-                            </div>
-                            <h3>DELIVERY PERSONNE</h3>
-                        </div> 
-                        <div class="jobDescription">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
-                            <button>Apply</button>
-                        </div>
-                    </div>
-                    <div class="jobPallet" onclick="expandPallet(this)">
-                        <div class="jobTitle">
-                            <div class="toggleShowHide">
-                                <a href="#">+</a>
-                            </div>
-                            <h3>IT CONSULTANT</h3>
-                        </div> 
-                        <div class="jobDescription" >
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
-                            <button>Apply</button>
-                        </div>
-                    </div>
-                    <div class="jobPallet" onclick="expandPallet(this)">
-                        <div class="jobTitle">
-                            <div class="toggleShowHide">
-                                <a href="#">+</a>
-                            </div>
-                            <h3>Graphic Designers and content creators</h3>
-                        </div> 
-                        <div class="jobDescription">
-                            <p>Join [Your Company] and unleash your creativity! Work on inspiring projects, collaborate with a talented team, and make an impact. Apply now!
-                                <br>
-                                Role: Graphic Designerbr <br>
-                                Responsibilities: [Key design responsibilities] <br>
-                                
-                                Deadline: [Deadline Date]</p>
-                            <button>Apply</button>
-                        </div>
-                    </div>
-                    <div class="jobPallet" onclick="expandPallet(this)">
-                        <div class="jobTitle">
-                            <div class="toggleShowHide">
-                                <a href="#" >+</a>
-                            </div>
-                            <h3>Internship</h3>
-                        </div> 
-                        <div class="jobDescription">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi repudiandae iste nisi tempore id inventore temporibus, dolorem saepe adipisci.</p>
-                            <button>Apply</button>
-                        </div>
-                    </div>
-                    
-                   
-
-                    
-                </div>
+            <div class="items">
+              <div class="title">SOLID STATE DRIVE</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                molestiae magni a quas minima corrupti!
+              </p>
             </div>
-
-            <div class="appointment" id="appointment">
-                <h1>TELL US YOUR PROBLEMS</h1>
-                <h2>Book an appointment </h2>
-                <div class="mainContainer">
-                    <label for="">Name</label>
-                    <input type="text" name="" id="">
-                    <br>
-                    <label for="">Email</label>
-                    <input type="text" name="" id="">
-                    <br>
-                    <label for="">Whatsapp / Telephhome</label>
-                    <input type="text" name="" id="">
-                    <br>
-                    <label for="">Reason for Appointment</label>
-                    <input type="text" name="" id="">
-                    <br>
-                    <label for="">Name</label>
-                    <input type="text" name="" id="">
-
-                </div>
+            <div class="items">
+              <div class="title">CHARGERS</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                molestiae magni a quas minima corrupti!
+              </p>
             </div>
-
-            <div class="howTo" id="howTo">
-                
-                    <h1>Tips & Trix</h1>
-                    <div>
-                        <div class="sideMenu" onscroll="darkenSideMenuHead()">                          
-                           
-                            <ul id="sideMenuList">
-                                <li>BOOST PC PERFORMNCE</li>
-                                <li>CHECK SYSTEM HEALTH</li>
-                                <li>BATTERY AND POWER HEALTH</li>
-                                <li>DIAGNOSE NEservicesRK ISSUES</li>
-                                <li>CHECK SYSTEM INFO</li>
-                                <li>PARTITION DRIVES</li>
-                                <li>CHECK FOR BAD DRIVE SECTORS</li>
-                                <li>CREATE BOOTABLE DRIVES</li>
-                                
-                              
-                            </ul>
-                        </div>
-                        <div class="mainMenu">
-                                <H3>BOOST PC PERFORMANCE</H3>
-                                
-                                <P>
-                                    Boosting your PC performance can greatly improve its speed and efficiency. Here are some general steps you can take to achieve that:
-                                        <br><br>
-                                        <ol>
-                                            <li><p>Remove unnecessary programs: Uninstall any unused applications and bloatware that are taking up valuable system resources.</p>
-                                            </li>
-                                            <li><p>Clean up disk space: Use disk cleanup tools or manually delete temporary files, old downloads, and other unnecessary files to free up storage space.</p>
-                                            </li>
-                                            <li><p>Update your operating system and drivers: Keeping your OS and drivers up to date ensures compatibility, stability, and access to performance enhancements.</p>
-                                            </li>
-                                            <li><p>Optimize startup programs: Disable unnecessary programs from starting up with your computer to reduce the boot time and improve overall performance.</p>
-                                            </li>
-                                            <li><p>Manage background processes: Identify resource-hungry processes running in the background and close unnecessary homes to free up system resources.</p>
-                                            </li>
-                                            <li><p>Scan for malware and viruses: Regularly perform full system scans using reliable antivirus software to detect and remove any malicious threats that can slow down your PC.</p>
-                                            </li>
-                                            <li><p>Upgrade hardware comphoments: Consider upgrading your RAM, replacing an old hard drive with a solid-state drive (SSD), or upgrading your graphics card to boost performance in specific areas.</p>
-                                            </li>
-                                            <li><p>Adjust visual effects: Reduce or disable unnecessary visual effects such as animations, transparency, and shadows to allocate more resources to essential tasks.</p>
-                                            </li>
-                                            <li><p>Defragment your hard drive (if applicable): Defragmenting your hard drive can improve data access speed and overall system performance. Note that this step is less relevant for SSDs.</p>
-                                            </li>
-                                            <li><p>Keep your PC physically clean: Regularly clean the dust and debris from your computer's comphoments, particularly the cooling fans, to prevent overheating and maintain optimal performance.</p>
-                                            </li>
-                                            
-                                        </ol>
-                                        Remember that these steps are general recommendations, and the specific actions needed may vary depending on your system configuration and requirements.
-                                </p>
-    
-                        </div>
-                    </div>
-            </div>   
-
-            <div class="contact" id="contact">
-                <h1> How To Reach Us</h1>
-                <div>
-                    <div class="contactInfo">
-                        <h3>CONTACT DETAILS</h3>
-                        <p>MOBILE: +233 (0) 55 285 1039 ||| +233 (0) 50 798 9317</p>
-                        
-                        <p>Email: wgoku885@gmail.com</p>
-                        <p>YouTube: <a href="https://www.youtube.com/@ifix-knust-gh2504" target="_blank">iFiX-KNUST-GH</a></p>
-                        <div class="socialLinks">
-                            <a href="t.me/iFiX_COMPUTERS"><img src="./images/icons/telegram (1).svg" alt=""></a> 
-                            <a href="https://wa.me/qr/VEG2OVZKT65LH1" target="_blank"><img src="./images/icons/whatsapp (1).svg" alt=""></a>
-                            <img src="./images/icons/twitter.svg" alt="">
-                           
-                        </div>
-                        <br>
-                        <br>
-                        <h3>LOCATION</h3>
-                        <p>KNUST - CAMPUS</p>
-                        <p>GUSSS HOSTEL - NEW BRUNEI - FIRST FLOOR</p>
-                            <br>
-                            <br>
-                        <h3>WORKING HOURS</h3>
-                        <p>MONDAY - SATURDAY</p>
-                     
-                    </div>
-                    <div class="sendMessage">
-                        <span>Send us a message</span>
-                        <div>
-                           <form action="">
-                            <h4>Name:</h4>
-                            <input type="text" id="name">
-                            <h4>Email:</h4>
-                            <input type="text" id="email">
-                            <h4>Message:</h4>
-                            <input type="text"> <br>
-                            <button>Submit</button> <br>
-                            
-                            <span><input type="checkbox" id="checkbox"> Send me weekly tips and info</span>
-                           </form>
-                        </div>
-                    </div>
-                </div>
-                <button>Book Appointment</button>
+            <div class="items">
+              <div class="title">STICKERS</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                molestiae magni a quas minima corrupti!
+              </p>
             </div>
+            <div class="items">
+              <div class="title">ACCESSORIES</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                molestiae magni a quas minima corrupti!
+              </p>
+            </div>
+            <div class="items">
+              <div class="title">PENDRIVES AND CARDS</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                molestiae magni a quas minima corrupti!
+              </p>
+            </div>
+            <div class="items">
+              <div class="title">CABLES</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                molestiae magni a quas minima corrupti!
+              </p>
+            </div>
+            <div class="items">
+              <div class="title">SOMETHING</div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                molestiae magni a quas minima corrupti!
+              </p>
+            </div>
+          </div>
         </div>
-        
-        <footer>
-            <p> &copy; 2023  iFiX . All rights reserved.</p>
-        </footer>
-        <script src="./index.js"></script>
+      </div>
 
-</body>
+      <!--this is the markup for the jobs page / page jobs (4)-->
+      <div class="jobs" id="jobs">
+        <h1>JOIN OUR TEAM TODAY</h1>
+        <h3>Apply to any home of the vaccancies below</h3>
+        <div>
+          <div class="jobPallet" onclick="expandPallet(this)">
+            <div class="jobTitle">
+              <div class="toggleShowHide">
+                <a href="#">+</a>
+              </div>
+              <h3>SOCIAL MEDIA MARKETTING</h3>
+            </div>
+            <div class="jobDescription">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisi cing elit. Fuga
+                sequi repudiandae iste nisi tempore id inventore temporibus,
+                dolorem saepe adipisci.
+              </p>
+              <button>Apply</button>
+            </div>
+          </div>
+          <div class="jobPallet" onclick="expandPallet(this)">
+            <div class="jobTitle">
+              <div class="toggleShowHide">
+                <a href="#">+</a>
+              </div>
+              <h3>DELIVERY PERSONNE</h3>
+            </div>
+            <div class="jobDescription">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                sequi repudiandae iste nisi tempore id inventore temporibus,
+                dolorem saepe adipisci.
+              </p>
+              <button>Apply</button>
+            </div>
+          </div>
+          <div class="jobPallet" onclick="expandPallet(this)">
+            <div class="jobTitle">
+              <div class="toggleShowHide">
+                <a href="#">+</a>
+              </div>
+              <h3>IT CONSULTANT</h3>
+            </div>
+            <div class="jobDescription">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                sequi repudiandae iste nisi tempore id inventore temporibus,
+                dolorem saepe adipisci.
+              </p>
+              <button>Apply</button>
+            </div>
+          </div>
+          <div class="jobPallet" onclick="expandPallet(this)">
+            <div class="jobTitle">
+              <div class="toggleShowHide">
+                <a href="#">+</a>
+              </div>
+              <h3>Graphic Designers and content creators</h3>
+            </div>
+            <div class="jobDescription">
+              <p>
+                Join [Your Company] and unleash your creativity! Work on
+                inspiring projects, collaborate with a talented team, and make
+                an impact. Apply now!
+                <br />
+                Role: Graphic Designerbr <br />
+                Responsibilities: [Key design responsibilities] <br />
+
+                Deadline: [Deadline Date]
+              </p>
+              <button>Apply</button>
+            </div>
+          </div>
+          <div class="jobPallet" onclick="expandPallet(this)">
+            <div class="jobTitle">
+              <div class="toggleShowHide">
+                <a href="#">+</a>
+              </div>
+              <h3>Internship</h3>
+            </div>
+            <div class="jobDescription">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                sequi repudiandae iste nisi tempore id inventore temporibus,
+                dolorem saepe adipisci.
+              </p>
+              <button>Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="appointment" id="appointment">
+        <h1>TELL US YOUR PROBLEMS</h1>
+        <h2>Book an appointment</h2>
+        <div class="mainContainer">
+          <label for="">Name</label>
+          <input type="text" name="" id="" />
+          <br />
+          <label for="">Email</label>
+          <input type="text" name="" id="" />
+          <br />
+          <label for="">Whatsapp / Telephhome</label>
+          <input type="text" name="" id="" />
+          <br />
+          <label for="">Reason for Appointment</label>
+          <input type="text" name="" id="" />
+          <br />
+          <label for="">Name</label>
+          <input type="text" name="" id="" />
+        </div>
+      </div>
+
+      <div class="howTo" id="howTo">
+        <h1>Tips & Trix</h1>
+        <div>
+          <div class="sideMenu" onscroll="darkenSideMenuHead()">
+            <ul id="sideMenuList">
+              <li>BOOST PC PERFORMNCE</li>
+              <li>CHECK SYSTEM HEALTH</li>
+              <li>BATTERY AND POWER HEALTH</li>
+              <li>DIAGNOSE NEservicesRK ISSUES</li>
+              <li>CHECK SYSTEM INFO</li>
+              <li>PARTITION DRIVES</li>
+              <li>CHECK FOR BAD DRIVE SECTORS</li>
+              <li>CREATE BOOTABLE DRIVES</li>
+            </ul>
+          </div>
+          <div class="mainMenu">
+            <h3>BOOST PC PERFORMANCE</h3>
+
+            Boosting your PC performance can greatly improve its speed and
+            efficiency. Here are some general steps you can take to achieve
+            that:
+            <br />
+            <li>
+              <p>
+                Remove unnecessary programs: Uninstall any unused applications
+                and bloatware that are taking up valuable system resources.
+              </p>
+            </li>
+            <li>
+              <p>
+                Clean up disk space: Use disk cleanup tools or manually delete
+                temporary files, old downloads, and other unnecessary files to
+                free up storage space.
+              </p>
+            </li>
+            <li>
+              <p>
+                Update your operating system and drivers: Keeping your OS and
+                drivers up to date ensures compatibility, stability, and access
+                to performance enhancements.
+              </p>
+            </li>
+            <li>
+              <p>
+                Optimize startup programs: Disable unnecessary programs from
+                starting up with your computer to reduce the boot time and
+                improve overall performance.
+              </p>
+            </li>
+            <li>
+              <p>
+                Manage background processes: Identify resource-hungry processes
+                running in the background and close unnecessary homes to free up
+                system resources.
+              </p>
+            </li>
+            <li>
+              <p>
+                Scan for malware and viruses: Regularly perform full system
+                scans using reliable antivirus software to detect and remove any
+                malicious threats that can slow down your PC.
+              </p>
+            </li>
+            <li>
+              <p>
+                Upgrade hardware comphoments: Consider upgrading your RAM,
+                replacing an old hard drive with a solid-state drive (SSD), or
+                upgrading your graphics card to boost performance in specific
+                areas.
+              </p>
+            </li>
+            <li>
+              <p>
+                Adjust visual effects: Reduce or disable unnecessary visual
+                effects such as animations, transparency, and shadows to
+                allocate more resources to essential tasks.
+              </p>
+            </li>
+            <li>
+              <p>
+                Defragment your hard drive (if applicable): Defragmenting your
+                hard drive can improve data access speed and overall system
+                performance. Note that this step is less relevant for SSDs.
+              </p>
+            </li>
+            <li>
+              <p>
+                Keep your PC physically clean: Regularly clean the dust and
+                debris from your computer's comphoments, particularly the
+                cooling fans, to prevent overheating and maintain optimal
+                performance.
+              </p>
+            </li>
+
+            Remember that these steps are general recommendations, and the
+            specific actions needed may vary depending on your system
+            configuration and requirements.
+          </div>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <h1>How To Reach Us</h1>
+        <div>
+          <div class="contactInfo">
+            <h3>CONTACT DETAILS</h3>
+            <p>MOBILE: +233 (0) 55 285 1039 ||| +233 (0) 50 798 9317</p>
+
+            <p>Email: wgoku885@gmail.com</p>
+            <p>
+              YouTube:
+              <a
+                href="https://www.youtube.com/@ifix-knust-gh2504"
+                target="_blank"
+                >iFiX-KNUST-GH</a
+              >
+            </p>
+            <div class="socialLinks">
+              <a href="t.me/iFiX_COMPUTERS"
+                ><img src="./images/icons/telegram (1).svg" alt=""
+              /></a>
+              <a href="https://wa.me/qr/VEG2OVZKT65LH1" target="_blank"
+                ><img src="./images/icons/whatsapp (1).svg" alt=""
+              /></a>
+              <img src="./images/icons/twitter.svg" alt="" />
+            </div>
+            <br />
+            <br />
+            <h3>LOCATION</h3>
+            <p>KNUST - CAMPUS</p>
+            <p>GUSSS HOSTEL - NEW BRUNEI - FIRST FLOOR</p>
+            <br />
+            <br />
+            <h3>WORKING HOURS</h3>
+            <p>MONDAY - SATURDAY</p>
+          </div>
+          <div class="sendMessage">
+            <span>Send us a message</span>
+            <div>
+              <form action="">
+                <h4>Name:</h4>
+                <input type="text" id="name" />
+                <h4>Email:</h4>
+                <input type="text" id="email" />
+                <h4>Message:</h4>
+                <input type="text" /> <br />
+                <button>Submit</button> <br />
+
+                <span
+                  ><input type="checkbox" id="checkbox" /> Send me weekly tips
+                  and info</span
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+        <button>Book Appointment</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 iFiX . All rights reserved.</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
 </html>
