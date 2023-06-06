@@ -208,11 +208,9 @@ nav button{
 
 
 .home, .services, .store, .jobs, .appointment, .howTo , .contact{
-    width: auto;
-    /* padding-top: px; */
+    width: 100%;
     margin-inline: auto; 
     height: auto;
-    /* overflow: scroll; */
     
 }
 
@@ -322,10 +320,10 @@ button:hover{
     box-shadow: 1px 1px 8px #00ffff;
 
 }
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar{
     opacity: 0;
     display: none;
-}  */
+} 
 
 .home .service{
     display: flex;
@@ -333,7 +331,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
+    /* gap: 40px; */
 
 }
 
