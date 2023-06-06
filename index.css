@@ -229,7 +229,7 @@ nav button{
     font-size: 90px;
     color: #00ffff;
     margin-bottom: 50px;
-    text-shadow: 0.5px 0.5px 8px  rgb(255, 255, 255,0.5);
+    /* text-shadow: 0.5px 0.5px 8px  rgb(255, 255, 255,0.5); */
     text-align: center;
     
 }
