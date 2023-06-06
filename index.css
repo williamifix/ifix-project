@@ -423,10 +423,11 @@ button:hover{
     height: inherit;
     border: 1px solid black;
     padding-inline: 20px;
-    border-radius: 0px 0px 10px 10px;
+    /* border-radius: 0px 0px 10px 10px; */
+    transition: 0.4s;
 }
 .sub_features span:hover{
-    background-color: #0d2a59;
+    background-color: rgb(13, 42, 89,0.5);
     color: white;
     
 }
@@ -658,7 +659,7 @@ overflow: scroll;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: red;
+    /* background-color: red; */
 }
 .contact >div{
     max-width: 1000px;
