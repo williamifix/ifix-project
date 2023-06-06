@@ -211,14 +211,17 @@ nav button{
     width: 100%;
     margin-inline: auto; 
     height: auto;
+  
     
 }
 
 .home{
-    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
     align-self: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 
@@ -258,7 +261,6 @@ nav button{
     position: absolute;
     right: 10px;
     top: 5px;
-    justify-content: center;
     margin-left: 30px;
     animation: wine;
     animation-duration: 1.5s;
@@ -304,10 +306,10 @@ a{
 
 .home button{
     position: relative;
-    display: block;
     font-size: larger;
     font-weight: bolder;
     margin: auto;
+    margin-bottom: 120px;
     margin-top: 120px;
     padding: 5px 10px;
     border-radius: 10px;
@@ -316,6 +318,7 @@ a{
     border: 0px;
     background-color: #00ffff;
 }
+
 button:hover{
     box-shadow: 1px 1px 8px #00ffff;
 
@@ -325,13 +328,14 @@ button:hover{
     display: none;
 } 
 
+
 .home .service{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* gap: 40px; */
+    gap: 20px;
 
 }
 
@@ -650,13 +654,18 @@ overflow: scroll;
 
 
 /*definitions for the contact page*/
-
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: red;
+}
 .contact >div{
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     gap: 100px;
-    position: relative;
-    
+    align-self: center;
 
 }
 
