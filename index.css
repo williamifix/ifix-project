@@ -16,7 +16,8 @@ body{
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgb(11, 16, 67,0.5);
+    background-color: rgb(11, 16, 67,0.3);
+    backdrop-filter: blur(5px);
     z-index: 8;
     top: 0px;
     left: 0px;
@@ -40,7 +41,7 @@ body{
 }
 
 header{
-    background-color: rgb(0, 255, 255,0.2);
+    /* background-color: rgb(0, 255, 255,0.2); */
     backdrop-filter: blur(30px);
     height: 100px;
     width: 100%;
@@ -66,17 +67,6 @@ nav{
 
    
    
-}
-.nav_icon{
-    display: none;
-  
-}
-
-.nav_icon img{
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    background-color: #0d2a59;
 }
 
 
@@ -106,8 +96,14 @@ nav{
 }
 
 nav ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
+    background-color: red;
 }
 
 nav ul li{
@@ -128,12 +124,6 @@ nav ul li a:hover{
     color: #00ffff;
 }
 
-nav >img{
-    align-self: center;
-    width: 40px;
-    height: 40px;
-    fill: #00ffff;
-}
 
 .signInUp{
     display: flex;
@@ -152,6 +142,11 @@ nav button{
     border-radius: 10px;
     font-weight: bolder;
     margin-inline-end: 10px;
+}
+
+.nav_icon {
+    display: none;
+
 }
 
 
@@ -782,40 +777,58 @@ footer p{
     nav{
         min-width: 90%;
         justify-content: space-between;
-        margin-inline: 50px;        
+        margin-inline: 50px;  
     }
     #navlinks {
         display: none;
     }
+    
     nav ul{
+        background-color: rgba(6, 9, 40);
+        backdrop-filter: blur(30px);
         position: fixed;
         display: flex;
         flex-direction: column;
         right: 0px;
-        top: 0px;
-        width: 100vw;
-        padding: 100px ;
+        top: 80px;
+        width: 100%;
+        padding-top: 20px ;
+        height: 100vh;
+        
     }
     nav ul li{
-        padding-bottom: 20px;
+        padding-top: 20px;
+        transition: 0.5s;
     }
+    nav ul li{
+        border-bottom: 1px solid #00ffff;
+        margin-inline: 100px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        text-align: right;
+    }
+
     nav button{
         display: none;
     }
+
     .nav_icon {
-        z-index: 20;
+        display: block;
         position: relative;
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    #nav_icon {
+    .nav_icon img{
         position: absolute;
-        height: inherit;
-        width: inherit;
+        display: block;
+       height: 50px;
+       width: 50px;
+      
     }
 
     .container{

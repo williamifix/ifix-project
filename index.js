@@ -1,3 +1,25 @@
+//function to toggle the nav menu in reponsive mood
+let nav_open = document.querySelector("#nav_open");
+let nav_close = document.querySelector("#nav_close");
+let nav_links = document.querySelector("#navlinks");
+toggleNavclose();
+
+function toggleNavopen() {
+    nav_links.style.display = "block";
+    nav_links.style.transition = "0.5s";
+    nav_close.style.display = "block";
+    nav_open.style.display = "none";
+    
+}
+
+function toggleNavclose() {
+    nav_links.style.display = "none";
+    nav_close.style.display = "none";
+    nav_open.style.display = "block";
+
+    
+}
+
 
 
 //function to show side menu
