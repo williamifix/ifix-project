@@ -55,6 +55,12 @@ header{
 
   
 }
+.pageheader{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background-color: transparent;
+}
 
 
 nav{
@@ -95,12 +101,13 @@ nav{
     
 }
 
-
 nav ul{
-    position: relative;
+    width: inherit;
+    height: inherit;
+
     display: flex;
-    /* justify-content: space-between; */
-    /* background-color: red; */
+    justify-content: space-between;
+    
 }
 
 nav ul li{
@@ -427,7 +434,7 @@ button:hover{
 
 
 /*this is the definitions for the stores page*/
-.store >div{
+.store .innerDiv{
     display: flex;
     overflow: hidden; 
     height: 1200px;
@@ -459,7 +466,7 @@ button:hover{
 
 
 /*this is the description for th jobs page*/
-.jobs >div{
+.jobs .innerDiv{
 padding: 10px;
 height: auto;
 overflow: scroll;
@@ -575,12 +582,13 @@ overflow: scroll;
 
 
 .sideMenu{
-    min-width: 30%;
+    min-width: 250px;
     margin-right: 40px;
     overflow: scroll;
     height: auto;
     transition: 0.8s;
     display: block; 
+    background-color: red;
 }
 
 
@@ -621,6 +629,7 @@ overflow: scroll;
     height: 1200px;
     padding: 50px;
     border-bottom: 3px solid #00ffff;
+    background-color: red;
     
 }
 
@@ -706,6 +715,9 @@ overflow: scroll;
     padding: 5px;
 
 }
+.sendMessage textarea{
+    width: 100%;
+}
 
 .sendMessage #checkbox{
     width: 30px;
@@ -766,25 +778,21 @@ footer p{
 }
 
 
+
 @media only screen and (max-width: 900px){
 
     header{
         height: 80px;
     }
+
     nav{
-        position: absolute;
+      
         min-width: 90%;
         justify-content: space-between;
         margin-inline: 100px;  
     }
       
-    .navlinks{
-        position: relative;
-        width: 100vw;
-        height: auto;
-        background-color: red;
-    }
-    nav ul{
+     nav ul{
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -792,8 +800,8 @@ footer p{
         top: 80px;
         width: 100%;
         padding-top: 20px;
-        height: 100vh;
-        /* background-color: rgb(3, 5, 26, 0.9); */
+        height: auto;
+        background-color: #061327;
         backdrop-filter: blur(90px);
         
     }
@@ -806,10 +814,7 @@ footer p{
         padding-top: 20px;
         transition: 0.5s;
     }
-    nav ul li:hover{
-        background-color: #00ffff;
-        color:red;
-    }
+    
     nav ul li a{
         font-size: 20px;
         text-align: right;
@@ -839,7 +844,7 @@ footer p{
 
     .container{
         padding-top: 0px;
-        width: 95%;
+        width: 90%;
         margin-inline: auto;
     }
 
@@ -853,7 +858,7 @@ h1 {
 }
     .items {
         height: 230px;
-        width: 180px;
+        width: 20d0px;
     }
     .items p{
         top: 10px;
@@ -863,4 +868,4 @@ h1 {
         flex-direction: column;
         gap: 30px;
     }
-} 
+}  

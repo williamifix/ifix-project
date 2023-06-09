@@ -2,7 +2,14 @@
 let nav_open = document.querySelector("#nav_open");
 let nav_close = document.querySelector("#nav_close");
 let nav_links = document.querySelector("#navlinks");
-toggleNavclose();
+
+header = document.querySelector("header");
+if (header.style.width <= "910px") {
+    console.log("yes yes yes ")
+    toggleNavclose();
+}
+
+
 
 function toggleNavopen() {
     nav_links.style.display = "block";
@@ -19,6 +26,9 @@ function toggleNavclose() {
 
     
 }
+
+
+
 
 
 
@@ -74,12 +84,12 @@ function setHeight (element){
     function expandPallet(element){
 
         if (element.style.height === "50px"){
-            element.style.height = "250px";
-            element.firstChild.atyle.innerHTML = "-"
+            element.style.height = "120px";
+            // element.firstChild.atyle.innerHTML = "-"
         }
         else {
             element.style.height = "50px";
-            element.firstChild.innerHTML = "+"
+            // element.firstChild.innerHTML = "+"
 
         }
     }

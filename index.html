@@ -21,7 +21,7 @@
 
         <!-- <div class="navlinks"> -->
         <div class="navlinks">
-          <ul id="navlinks">
+          <ul id="navlinks" onclick="toggleNavclose()">
             <li><a href="#">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#store">Store</a></li>
@@ -68,6 +68,7 @@
     <!--this is the parent class of all the pages-->
     <div class="container">
       <div class="home" id="home">
+        <div class="pageheader"></div>
         <div class="home">
           <h3>YOU BREAK IT <strong>?</strong></h3>
           <h1>
@@ -86,8 +87,11 @@
           </p>
           <button>FIX PC</button>
         </div>
+
         <h1>WHAT WE OFFER</h1>
+
         <div class="service" id="services">
+          <div class="pageheader"></div>
           <div class="items">
             <div class="title">
               <span> OS INSTALLATIONS</span>
@@ -182,8 +186,10 @@
             </div> -->
 
       <div class="store" id="store">
+        <div class="pageheader"></div>
+
         <h1>STORE</h1>
-        <div>
+        <div class="innerDiv">
           <div class="sideMenu" onscroll="darkenSideMenuHead()">
             <ul id="sideMenuList">
               <li style="font-weight: BOLDER">
@@ -354,9 +360,11 @@
 
       <!--this is the markup for the jobs page / page jobs (4)-->
       <div class="jobs" id="jobs">
+        <div class="pageheader"></div>
+
         <h1>JOIN US</h1>
         <h3>Apply to any home of the vaccancies below</h3>
-        <div>
+        <div class="innerDiv">
           <div class="jobPallet" onclick="expandPallet(this)">
             <div class="jobTitle">
               <div class="toggleShowHide">
@@ -446,6 +454,8 @@
       </div>
 
       <div class="appointment" id="appointment">
+        <div class="pageheader"></div>
+
         <h1>TELL US YOUR PROBLEMS</h1>
         <h2>Book an appointment</h2>
         <div class="appointment_pallet">
@@ -467,6 +477,8 @@
       </div>
 
       <div class="howTo" id="howTo">
+        <div class="pageheader"></div>
+
         <h1>Tips & Trix</h1>
         <div>
           <div class="sideMenu" onscroll="darkenSideMenuHead()">
@@ -568,6 +580,8 @@
       </div>
 
       <div class="contact" id="contact">
+        <div class="pageheader"></div>
+
         <h1>How To Reach Us</h1>
         <div>
           <div class="contactInfo">
