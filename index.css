@@ -341,10 +341,9 @@ button:hover{
 .items{
     position: relative;
     width: 250px;
-    height: 300px;
+    height: 250px;
     border-radius: 30px;
     border: 1px solid #00ffff;
-    margin-inline: auto ;
     margin-bottom: 40px;
     overflow: hidden;
     overflow: hidden;
@@ -359,7 +358,6 @@ button:hover{
     text-align: center;
     transition: 0.5s;
     color: #00ffff;
-    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -436,8 +434,9 @@ button:hover{
 /*this is the definitions for the stores page*/
 .store .innerDiv{
     display: flex;
-    overflow: hidden; 
-    height: 1200px;
+    flex-direction: row;
+    overflow: auto; 
+    height: auto;
     width: 100%;
 
 }
@@ -588,7 +587,6 @@ overflow: scroll;
     height: auto;
     transition: 0.8s;
     display: block; 
-    /* background-color: red; */
 }
 
 
@@ -626,7 +624,7 @@ overflow: scroll;
     width: auto;
     padding: 20px;
     overflow: scroll;
-    height: 1200px;
+    height: auto;
     padding: 50px;
     border-bottom: 3px solid #00ffff;
     /* background-color: red; */
@@ -854,7 +852,7 @@ footer p{
     }
 h1 {
     font-size: 60px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     border-bottom: 1px solid white;
 }
     .items {
@@ -864,6 +862,7 @@ h1 {
     .items p{
         top: 10px;
     }
+
 
     .contact  >div{
         flex-direction: column;
@@ -880,9 +879,6 @@ h1 {
             width: 35px;
             height: 35px;
         }
-    .container {
-        /* background-color: brown; */
-    }
     .home{
         padding-top: 30px;
     }
@@ -890,11 +886,57 @@ h1 {
         font-size: 13px;
         line-height: 20px;
     }
+    .service .innerDiv{
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .store .innerDiv {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
 
-        .mainMenu {
-            display: none;
-        }
+    }
+
+    .mainMenu {
+
+        padding: 0px;
+    }
+
+    .items{
+        padding: 0px;
+        border-radius: 10px;
+        height: auto;
+        margin-bottom: 0px;
+        width: 100%;
+        background-color: transparent;
+        border: 0px;
+        
+
+    }
+
+    .items:hover{
+        -ms-transform-origin-z: 0px;
+            box-shadow: 0px 0px 0px transparent;
+            transform: skewY(0deg);
+            cursor: pointer;
+    }
+    .items p, .items .sub_features{
+        display: none;
+    }
+    .items .title {
+        width: auto;
+        border-radius: 10px;
+        margin-inline: 20px;
+            background-color: rgb(0, 255, 255, 0.2);
+            
+    }
+
+
+    .howTo >div{
+        flex-direction: column;
+    }
 }
+
 
 
 
@@ -912,10 +954,5 @@ h1 {
         font-size: 40px;
         margin-bottom: 20px;
     }
-.container {
-    /* background-color: green; */
-}
-
-
 
 }

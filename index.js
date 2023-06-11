@@ -3,8 +3,8 @@ let nav_open = document.querySelector("#nav_open");
 let nav_close = document.querySelector("#nav_close");
 let nav_links = document.querySelector("#navlinks");
 
-header = document.querySelector("header");
-if (header.style.width <= "910px") {
+body = document.querySelector("body");
+if (body.style.width <= "910px") {
     toggleNavclose();
     nav_links.style.display = "inline-flex";
 }
@@ -12,19 +12,33 @@ if (header.style.width <= "910px") {
 
 
 function toggleNavopen() {
-    nav_links.style.display = "block";
-    nav_links.style.transition = "0.5s";
-    nav_close.style.display = "block";
-    nav_open.style.display = "none";
+        
+    if (body.style.width <= "910px") {
+        nav_links.style.display = "block";
+        nav_links.style.transition = "0.5s";
+        nav_close.style.display = "block";
+        nav_open.style.display = "none";
+    }
+    
     
 }
 
 function toggleNavclose() {
-    nav_links.style.display = "none";
-    nav_close.style.display = "none";
-    nav_open.style.display = "block";
+    console.log("navclose")
+    body = document.querySelector("body");
+    if (body.style.width <= "910px") {
+        console.log("close")
+        nav_links.style.display = "none";
+        nav_close.style.display = "none";
+        nav_open.style.display = "block";
+    }
+    else {
+        nav_links.style.display = "inline-flex";
+        body.style.backgorundColor = "red";
 
-    
+    }
+                
+
 }
 
 
