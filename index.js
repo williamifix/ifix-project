@@ -1,49 +1,32 @@
-//function to toggle the nav menu in reponsive mood
-let nav_open = document.querySelector("#nav_open");
-let nav_close = document.querySelector("#nav_close");
-let nav_links = document.querySelector("#navlinks");
 
-body = document.querySelector("body");
-if (body.style.width <= "910px") {
-    toggleNavclose();
-    nav_links.style.display = "inline-flex";
+var nav = document.querySelector("nav");
+document.querySelector("#nav_close").style.display = "none";
+toggleNavOpen()
+
+function toggleNavOpen() {
+    if (nav.clientWidth <= 830) {
+    document.querySelector("nav ul").style.display = "inline-flex";
+    document.querySelector("#nav_close").style.display = "block";
+    document.querySelector("#nav_open").style.display = "none";
+    }
 }
 
 
-
-function toggleNavopen() {
-        
-    if (body.style.width <= "910px") {
-        nav_links.style.display = "block";
-        nav_links.style.transition = "0.5s";
-        nav_close.style.display = "block";
-        nav_open.style.display = "none";
+function toggleNavClose() {
+    if (nav.clientWidth <= 830) {
+    document.querySelector("nav ul").style.display = "none";
+    document.querySelector("#nav_close").style.display = "none";
+    document.querySelector("#nav_open").style.display = "block";
     }
-    
-    
 }
 
-function toggleNavclose() {
-    console.log("navclose")
-    body = document.querySelector("body");
-    if (body.style.width <= "910px") {
-        console.log("close")
-        nav_links.style.display = "none";
-        nav_close.style.display = "none";
-        nav_open.style.display = "block";
-    }
-    else {
-        nav_links.style.display = "inline-flex";
-        body.style.backgorundColor = "red";
+setInterval(displayNavflex, 100);
 
-    }
-                
-
+function displayNavflex() {
+    if ((nav.clientWidth >= 831)) {
+      document.querySelector("nav ul").style.display = "flex";
 }
-
-
-
-
+}
 
 
 //function to show side menu
@@ -93,18 +76,15 @@ function setHeight (element){
     element.style.height = "50px";
 }
 
-    //this function works around the job pallets
-   setHeight()
+//this function works around the job pallets
+//    setHeight()
     function expandPallet(element){
 
         if (element.style.height === "50px"){
             element.style.height = "250px";
-            // element.firstChild.atyle.innerHTML = "-"
         }
         else {
             element.style.height = "50px";
-            // element.firstChild.innerHTML = "+"
-
         }
     }
    

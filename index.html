@@ -22,14 +22,16 @@
 
         <!-- <div class="navlinks"> -->
         <div class="navlinks">
-          <ul id="navlinks" onclick="toggleNavclose()">
-            <li><a href="#">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#store">Store</a></li>
-            <li><a href="#jobs">Jobs</a></li>
-            <li><a href="#appointment">Appointment</a></li>
-            <li><a href="#howTo">HowTo's</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul id="navlinks">
+            <li><a href="#" onclick="toggleNavClose()">Home</a></li>
+            <li><a href="#services" onclick="toggleNavClose()">Services</a></li>
+            <li><a href="#store" onclick="toggleNavClose()">Store</a></li>
+            <li><a href="#jobs" onclick="toggleNavClose()">Jobs</a></li>
+            <li>
+              <a href="#appointment" onclick="toggleNavClose()">Appointment</a>
+            </li>
+            <li><a href="#howTo" onclick="toggleNavClose()">HowTo's</a></li>
+            <li><a href="#contact" onclick="toggleNavClose()">Contact</a></li>
           </ul>
         </div>
 
@@ -37,16 +39,16 @@
           <button>sign in</button>
           <button>sign Up</button>
         </div>
-        <div class="nav_icon"> 
+        <div class="nav_icon">
           <img
             id="nav_open"
-            onclick="toggleNavopen()"
+            onclick="toggleNavOpen()"
             src="./images/icons/navigationmenu.png"
             alt=""
           />
           <img
             id="nav_close"
-            onclick="toggleNavclose()"
+            onclick="toggleNavClose()"
             src="./images/icons/closecircled.png"
             alt=""
           />
@@ -192,6 +194,13 @@
         <div class="pageheader"></div>
 
         <h1>STORE</h1>
+        <div class="store_header">
+          <div class="search_store">
+            <input type="text" placeholder="Type your search" />
+            <img src="./images/search-1.svg" alt="" />
+          </div>
+          <img src="./images/cart.svg" alt="" />
+        </div>
         <div class="innerDiv">
           <div class="sideMenu" onscroll="darkenSideMenuHead()">
             <ul id="sideMenuList">
@@ -361,8 +370,6 @@
         </div>
       </div>
 
-
-
       <!--this is the markup for the jobs page / page jobs (4)-->
       <div class="jobs" id="jobs">
         <div class="pageheader"></div>
@@ -466,20 +473,36 @@
         <h1>TELL US YOUR PROBLEMS</h1>
         <h2>Book an appointment</h2>
         <div class="appointment_pallet">
-          <label for="">Name</label>
+          <h4>Name</h4>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="FirstName MiddleName LastName"
+          />
+          <br />
+          <h4>Email</h4>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="example@something.com"
+          />
+          <br />
+          <h4>Whatsapp / Telegram / Phone</h4>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter one one of the above"
+          />
+          <br />
+          <label for=""></label>
+          <label for=""></label>
+          <h4>Select a service you need</h4>
           <input type="text" name="" id="" />
           <br />
-          <label for="">Email</label>
-          <input type="text" name="" id="" />
-          <br />
-          <label for="">Whatsapp / Telephhome</label>
-          <input type="text" name="" id="" />
-          <br />
-          <label for="">Select the service you need</label>
-          <input type="text" name="" id="" />
-          <br />
-          <label for="">Name</label>
-          <input type="text" name="" id="" />
+          <button>submit</button>
         </div>
       </div>
 
@@ -507,77 +530,79 @@
             efficiency. Here are some general steps you can take to achieve
             that:
             <br />
-            <li>
-              <p>
-                Remove unnecessary programs: Uninstall any unused applications
-                and bloatware that are taking up valuable system resources.
-              </p>
-            </li>
-            <li>
-              <p>
-                Clean up disk space: Use disk cleanup tools or manually delete
-                temporary files, old downloads, and other unnecessary files to
-                free up storage space.
-              </p>
-            </li>
-            <li>
-              <p>
-                Update your operating system and drivers: Keeping your OS and
-                drivers up to date ensures compatibility, stability, and access
-                to performance enhancements.
-              </p>
-            </li>
-            <li>
-              <p>
-                Optimize startup programs: Disable unnecessary programs from
-                starting up with your computer to reduce the boot time and
-                improve overall performance.
-              </p>
-            </li>
-            <li>
-              <p>
-                Manage background processes: Identify resource-hungry processes
-                running in the background and close unnecessary homes to free up
-                system resources.
-              </p>
-            </li>
-            <li>
-              <p>
-                Scan for malware and viruses: Regularly perform full system
-                scans using reliable antivirus software to detect and remove any
-                malicious threats that can slow down your PC.
-              </p>
-            </li>
-            <li>
-              <p>
-                Upgrade hardware comphoments: Consider upgrading your RAM,
-                replacing an old hard drive with a solid-state drive (SSD), or
-                upgrading your graphics card to boost performance in specific
-                areas.
-              </p>
-            </li>
-            <li>
-              <p>
-                Adjust visual effects: Reduce or disable unnecessary visual
-                effects such as animations, transparency, and shadows to
-                allocate more resources to essential tasks.
-              </p>
-            </li>
-            <li>
-              <p>
-                Defragment your hard drive (if applicable): Defragmenting your
-                hard drive can improve data access speed and overall system
-                performance. Note that this step is less relevant for SSDs.
-              </p>
-            </li>
-            <li>
-              <p>
-                Keep your PC physically clean: Regularly clean the dust and
-                debris from your computer's comphoments, particularly the
-                cooling fans, to prevent overheating and maintain optimal
-                performance.
-              </p>
-            </li>
+            <ol>
+              <li>
+                <p>
+                  Remove unnecessary programs: Uninstall any unused applications
+                  and bloatware that are taking up valuable system resources.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Clean up disk space: Use disk cleanup tools or manually delete
+                  temporary files, old downloads, and other unnecessary files to
+                  free up storage space.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Update your operating system and drivers: Keeping your OS and
+                  drivers up to date ensures compatibility, stability, and
+                  access to performance enhancements.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Optimize startup programs: Disable unnecessary programs from
+                  starting up with your computer to reduce the boot time and
+                  improve overall performance.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Manage background processes: Identify resource-hungry
+                  processes running in the background and close unnecessary
+                  homes to free up system resources.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Scan for malware and viruses: Regularly perform full system
+                  scans using reliable antivirus software to detect and remove
+                  any malicious threats that can slow down your PC.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Upgrade hardware comphoments: Consider upgrading your RAM,
+                  replacing an old hard drive with a solid-state drive (SSD), or
+                  upgrading your graphics card to boost performance in specific
+                  areas.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Adjust visual effects: Reduce or disable unnecessary visual
+                  effects such as animations, transparency, and shadows to
+                  allocate more resources to essential tasks.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Defragment your hard drive (if applicable): Defragmenting your
+                  hard drive can improve data access speed and overall system
+                  performance. Note that this step is less relevant for SSDs.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Keep your PC physically clean: Regularly clean the dust and
+                  debris from your computer's comphoments, particularly the
+                  cooling fans, to prevent overheating and maintain optimal
+                  performance.
+                </p>
+              </li>
+            </ol>
 
             Remember that these steps are general recommendations, and the
             specific actions needed may vary depending on your system
