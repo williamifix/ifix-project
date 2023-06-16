@@ -196,7 +196,7 @@ nav button{
  h1{
     font-size: 90px;
     color: #00ffff;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
     padding-bottom: 30px;
     
@@ -309,20 +309,18 @@ button:hover{
 .service .items{
     position: relative;
     width: 200px;
-    height: 200px;
+    height: 250px;
+    transition: 0.5s;
+    background-color: rgb(0, 255, 255, 0.2);
     border-radius: 20px;
     border: 1px solid #00ffff;
-    margin-bottom: 10px;
-    overflow: hidden;
-    overflow: hidden;
-    transition: 0.5s;
-    background-color: rgb(0, 255, 255, 0.2);}
+}
 
 .service .items .title{
     height: 70px;
     width: inherit;
     border: 1px solid #00ffff;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0px 0px;
     text-align: center;
     transition: 0.5s;
     color: #00ffff;
@@ -359,42 +357,18 @@ button:hover{
 
 .services .items p{
     font-size: 13px;
-    padding-inline: 5px;
+    padding-inline: 10px;
     text-align: center;
     position: relative;
-    top: 30px;
+    top: 0px;
     
 }   
 
-.sub_features{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 30px;
-    background-color: #00ffff;
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    padding-inline: 40px;
-    align-items: center;
-    
 
-}
-.sub_features span{
-    font-weight: bold;
-    font-size: 12px;
-    width: 50%;
-    height: inherit;
-    /* border: 1px solid black; */
-    padding-inline: 20px;
-    border-radius: 4px;
-    transition: 0.4s;
-}
-.sub_features span:hover{
-    background-color: rgb(13, 42, 89,0.5);
-    color: white;
-    
-}
+
+
+
+
 
 
 
@@ -457,6 +431,107 @@ button:hover{
     gap: 20px;
    
 }
+.store .mainMenu {
+    width: auto;
+    padding-inline: 0px;
+    overflow: scroll;
+    height: 900px;
+
+}
+
+.store .items {
+    position: relative;
+    width: 150px;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid #00ffff;
+    margin-bottom: 10px;
+    overflow: hidden;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: rgb(0, 255, 255, 0.2);
+}
+
+.store .items .title {
+    height: 70px;
+    width: inherit;
+    border: 1px solid #00ffff;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    transition: 0.5s;
+    color: #00ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+
+}
+
+.store .items p {
+    display: none;
+}
+
+.store .items img {
+    width: 150PX;
+    height: 150PX;
+}
+
+.store .items:nth-child(even):hover {
+    -ms-transform-origin-z: 20px;
+    box-shadow: 1px 1px 8px #00ffff;
+    transform: skewY(2deg);
+    cursor: pointer;
+
+}
+
+.store .items:nth-child(odd):hover {
+    box-shadow: 1px 1px 10px #00ffff;
+    transform: skewY(-2deg);
+    cursor: pointer;
+
+}
+
+.store .items .title:hover {
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+
+
+}
+
+.sub_features {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    background-color: #00ffff;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 40px;
+    align-items: center;
+
+
+}
+
+.sub_features span {
+    font-weight: bold;
+    font-size: 12px;
+    width: 50%;
+    height: inherit;
+    /* border: 1px solid black; */
+    padding-inline: 20px;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.sub_features span:hover {
+    background-color: rgb(13, 42, 89, 0.5);
+    color: white;
+
+}
+
 .store ul {
     color: #00ffff;
 }
@@ -640,72 +715,6 @@ overflow: scroll;
 
 }
 
-.store .mainMenu{
-    width: auto;
-    padding-inline: 0px;
-    overflow: scroll;
-    height: 900px;
-    
-}
-
-.store .items {
-    position: relative;
-    width: 150px;
-    height: 300px;
-    border-radius: 20px;
-    border: 1px solid #00ffff;
-    margin-bottom: 10px;
-    overflow: hidden;
-    overflow: hidden;
-    transition: 0.5s;
-    background-color: rgb(0, 255, 255, 0.2);
-}
-
-.store .items .title {
-    height: 70px;
-    width: inherit;
-    border: 1px solid #00ffff;
-    border-radius: 20px 20px 0 0;
-    text-align: center;
-    transition: 0.5s;
-    color: #00ffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-
-
-}
-.store .items p{
-    display: none;
-}
-.store .items img{
-    width: 150PX;
-    height: 150PX;
-}
-
-.store .items:nth-child(even):hover {
-    -ms-transform-origin-z: 20px;
-    box-shadow: 1px 1px 8px #00ffff;
-    transform: skewY(2deg);
-    cursor: pointer;
-
-}
-
-.store .items:nth-child(odd):hover {
-    box-shadow: 1px 1px 10px #00ffff;
-    transform: skewY(-2deg);
-    cursor: pointer;
-
-}
-
-.store .items .title:hover {
-    transition: 0.5s;
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-
-
-}
 
 .mainMenu h3{
     color: #00ffff;
@@ -884,6 +893,7 @@ footer p{
     }
     nav ul li{
         padding-top: 20px;
+        font-size: 20px;
     }
     nav ul li a{
         color: white ;
@@ -925,18 +935,17 @@ h1 {
     margin-bottom: 20px;
     border-bottom: 1px solid white;
 }
-    .items {
-        height: 230px;
-        width: 200px;
-    }
+ 
     .items p{
         top: 10px;
     }
 
 .howTo .mainMenu{
-    /* position: absolute; */
     min-width: 300px;
-    background-color: grey;
+    padding-left: 20px;
+    height: 500px;
+    overflow: scroll;
+    border-bottom: 1px solid #00ffff;
 }
 
     .contact  >div{
@@ -953,7 +962,7 @@ h1 {
 
 
 @media only screen and (max-width: 426px) {
-    
+       
     .store .innerDiv {
         gap: 10px;
         display: flex;
@@ -969,19 +978,32 @@ h1 {
         width: 100%;
     }
 
-    .items{
+    .store .items{
         padding: 0px;
         border-radius: 10px;
-        height: auto;
+        /* height: auto; */
         margin-bottom: 0px;
-        width: 100%;
+        width: 150px;
         background-color: transparent;
-        border: 0px;
+        /* border: px; */
         
 
     }
-
-        .items:nth-child(even):hover {
+       .store  .items .title {
+             width: 150px;
+    
+             height: 50px;
+             border-radius: 10px 10px 0px 0px;
+             background-color: rgb(0, 255, 255, 0.2);
+    
+         }
+         .store .items img{
+            width: 150px;
+         }
+         .store .items .title:hover {
+             box-shadow: 1px 1px 8px #00ffff;
+         }
+        .store .items:nth-child(even):hover {
             -ms-transform-origin-z: 0px;
             box-shadow: 1px 1px 8px transparent;
             transform: skewY(0deg);
@@ -989,26 +1011,14 @@ h1 {
     
         }
     
-        .items:nth-child(odd):hover {
+        .store .items:nth-child(odd):hover {
             box-shadow: 1px 1px 10px transparent;
             transform: skewY(0deg);
             cursor: pointer;
     
         }
-    .items p, .items .sub_features{
-        display: none;
-    }
-    .items .title {
-        width: auto;
-        height: 50px;
-        border-radius: 10px;
-        margin-inline: 20px;
-            background-color: rgb(0, 255, 255, 0.2);
-            
-    }
-    .items .title:hover{
-        box-shadow: 1px 1px 8px #00ffff;
-    }
+
+   
 
 
     .howTo >div{
