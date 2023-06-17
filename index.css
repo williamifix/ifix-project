@@ -677,7 +677,7 @@ overflow: scroll;
 
 
 .sideMenu{
-    min-width: 300px;
+    min-width: 250px;
     margin-right: 0px;
     overflow: scroll;
     height: auto;
@@ -866,6 +866,11 @@ footer p{
     font-weight: bolder;
 }
 
+@media only screen and (max-width: 1024px) {
+    header{
+        height: 80px;
+    }
+}
 
 
 @media only screen and (max-width: 830px){
@@ -887,7 +892,7 @@ footer p{
         margin-inline: auto;
            align-items: center;
            left: 0px;
-           top: 90px;
+           top: 80px;
            padding: 20px;
         
     }
@@ -936,10 +941,9 @@ h1 {
     border-bottom: 1px solid white;
 }
  
-    .items p{
-        top: 10px;
-    }
-
+   .store .sideMenu{
+    min-width: 200PX;
+   }
 .howTo .mainMenu{
     min-width: 300px;
     padding-left: 20px;
@@ -962,7 +966,16 @@ h1 {
 
 
 @media only screen and (max-width: 426px) {
-       
+    .service .items{
+        height: auto;
+        border-radius: 10px;
+    }
+    .service .items .title{
+        border-radius: 10px;
+    }
+    .service .items p{
+        display: none;
+    }
     .store .innerDiv {
         gap: 10px;
         display: flex;
