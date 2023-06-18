@@ -81,7 +81,7 @@ function setHeight (element){
     function expandPallet(element){
 
         if (element.style.height === "50px"){
-            element.style.height = "250px";
+            element.style.height = "300px";
         }
         else {
             element.style.height = "50px";

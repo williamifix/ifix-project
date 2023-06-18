@@ -16,8 +16,8 @@ body{
     position: fixed;
     width: 100%;
     height: 100dvh;
-    background-color: rgb(11, 16, 67,0.3);
-    backdrop-filter: blur(10px);
+    background-color: rgb(11, 16, 67,0.1);
+    backdrop-filter: blur(3px);
     z-index: 8;
     top: 0px;
     left: 0px;
@@ -26,7 +26,8 @@ body{
     width: 100%;
     height: 100dvh;
     position: fixed;
-    background-size: contain;
+    z-index: 0;
+    background-size: cover;
     animation-name: bodybackground;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -309,14 +310,18 @@ button:hover{
 .service .items{
     position: relative;
     width: 200px;
-    height: 250px;
+    height: 280px;
     transition: 0.5s;
     background-color: rgb(0, 255, 255, 0.2);
     border-radius: 20px;
     border: 1px solid #00ffff;
+    padding: 10px;
 }
 
 .service .items .title{
+    position: absolute;
+    top: 0px;
+    left: 0px;
     height: 70px;
     width: inherit;
     border: 1px solid #00ffff;
@@ -327,10 +332,11 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0px;
    
 
 }
+
 .service .items:nth-child(even):hover{
     -ms-transform-origin-z: 20px;
     box-shadow: 1px 1px 8px #00ffff;
@@ -350,23 +356,37 @@ button:hover{
     transition: 0.5s;
     color: rgb(255, 255, 255);
     font-weight: bolder;
-    
+    cursor: none;
 
 }
 
 
-.services .items p{
-    font-size: 13px;
+.service .items p{
+    font-size: 12px;
     padding-inline: 10px;
     text-align: center;
     position: relative;
-    top: 0px;
+    top: 65px;
     
 }   
 
+.service .items button{
+    position: absolute;
+    bottom: 0px;
+    height: 30px;
+    width: inherit;
+    left: 0px;
+    margin: 0px;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 12px;
+}
 
-
-
+/* #flyer{
+    position: relative;
+    top: 20px;
+    width: inherit;
+    height: 800px;
+} */
 
 
 
@@ -399,10 +419,12 @@ button:hover{
     position: relative;
 
 }
+
 .store_header input{
     background-color: transparent;
     height: 100%;
-    width: 90%;
+    width: auto;
+    flex: 1;
     border: 1px solid black;
     border-radius: inherit;
     padding-inline: 20px;
@@ -431,11 +453,18 @@ button:hover{
     gap: 20px;
    
 }
+.store .sideMenu{
+    border-right: 1px solid #00ffff;
+}
+.store .sideMenu input{
+    position: absolute;
+    right: 10px;
+}
 .store .mainMenu {
     width: auto;
-    padding-inline: 0px;
     overflow: scroll;
-    height: 900px;
+    height: 935px;
+    border-bottom: 1px sollid #00ffff;
 
 }
 
@@ -443,7 +472,7 @@ button:hover{
     position: relative;
     width: 150px;
     height: 300px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     border: 1px solid #00ffff;
     margin-bottom: 10px;
     overflow: hidden;
@@ -453,10 +482,10 @@ button:hover{
 }
 
 .store .items .title {
-    height: 70px;
+    height: 40px;
     width: inherit;
     border: 1px solid #00ffff;
-    border-radius: 20px 20px 0 0;
+    /* border-radius: 20px 20px 0 0; */
     text-align: center;
     transition: 0.5s;
     color: #00ffff;
@@ -464,6 +493,8 @@ button:hover{
     justify-content: center;
     align-items: center;
     padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
 
 
 }
@@ -471,23 +502,30 @@ button:hover{
 .store .items p {
     display: none;
 }
-
+.store .item-image{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
 .store .items img {
-    width: 150PX;
-    height: 150PX;
+    width: inherit;
+    height: inherit;
+    transition: 0.6s;
+}
+.store .items img:hover{
+    width: 180px;
+    height: 180px;
 }
 
 .store .items:nth-child(even):hover {
     -ms-transform-origin-z: 20px;
     box-shadow: 1px 1px 8px #00ffff;
-    transform: skewY(2deg);
     cursor: pointer;
 
 }
 
 .store .items:nth-child(odd):hover {
     box-shadow: 1px 1px 10px #00ffff;
-    transform: skewY(-2deg);
     cursor: pointer;
 
 }
@@ -505,7 +543,7 @@ button:hover{
     bottom: 0px;
     width: 100%;
     height: 30px;
-    background-color: #00ffff;
+    /* background-color: #ffae00; */
     color: black;
     display: flex;
     justify-content: space-around;
@@ -515,20 +553,21 @@ button:hover{
 
 }
 
-.sub_features span {
+.sub_features button {
     font-weight: bold;
     font-size: 12px;
-    width: 50%;
-    height: inherit;
+    width: 75px;
+    height: 30px;
     /* border: 1px solid black; */
     padding-inline: 20px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     transition: 0.4s;
 }
 
-.sub_features span:hover {
-    background-color: rgb(13, 42, 89, 0.5);
-    color: white;
+.sub_features button:hover {
+    background-color: rgb(0, 255, 255, 0);    color: white;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px;
 
 }
 
@@ -548,10 +587,17 @@ button:hover{
 
 
 /*this is the description for th jobs page*/
+
 .jobs .innerDiv{
 padding: 10px;
 height: auto;
-overflow: scroll;
+/* overflow: scroll; */
+display: flex;
+flex-direction: column;
+width: inherit;
+justify-content: center;
+align-items: center;
+/* background-color: #00ffff; */
 }
 
 .jobs >div .jobPallet{
@@ -563,6 +609,7 @@ overflow: scroll;
     border: #00ffff 1px solid;
     height: 50px;
     overflow: hidden;
+    width: 600px;
 
 }
 
@@ -628,7 +675,7 @@ overflow: scroll;
 .appointment .appointment_pallet{
     background-color: rgb(0, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    max-width: 500px;
+    width: 600px;
     align-self: center;
     border-radius: 30px;
     padding: 20px;
@@ -667,12 +714,10 @@ overflow: scroll;
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
+    margin-inline: auto;
+    gap: 40px;
     
     
-}
-
-#sideMenuHead :nth-child(2){
-    display: block;
 }
 
 
@@ -690,8 +735,7 @@ overflow: scroll;
 .sideMenu ul li{
     list-style: none;
     border-bottom: 1px solid hwb(180 0% 0%);
-    padding: 0px 10px;
-    margin-right: 10px;
+    padding: 10px 0px;
     font-size: 12px;
 
 }
@@ -956,10 +1000,12 @@ h1 {
         flex-direction: column;
         gap: 30px;
     }
-    
-    .appointment_pallet {
-        width: 500px;
+
+    .jobs .innerDiv{
+        margin-inline: auto;
     }
+
+   
 }  
 
 
@@ -967,15 +1013,26 @@ h1 {
 
 @media only screen and (max-width: 426px) {
     .service .items{
-        height: auto;
+        height: 50px;
+        width: 280px;
         border-radius: 10px;
+        padding: 0px;
+        
     }
     .service .items .title{
-        border-radius: 10px;
+        height: inherit;
+        width: inherit;
+        border-radius: inherit;
+        
     }
     .service .items p{
         display: none;
     }
+    .service .items button{
+        display: none;
+    }
+
+
     .store .innerDiv {
         gap: 10px;
         display: flex;
@@ -994,11 +1051,10 @@ h1 {
     .store .items{
         padding: 0px;
         border-radius: 10px;
-        /* height: auto; */
+        height: 200px;
         margin-bottom: 0px;
-        width: 150px;
+        width: 130px;
         background-color: transparent;
-        /* border: px; */
         
 
     }
@@ -1011,7 +1067,9 @@ h1 {
     
          }
          .store .items img{
-            width: 150px;
+            width: 130px;
+            height: 100px;
+            
          }
          .store .items .title:hover {
              box-shadow: 1px 1px 8px #00ffff;
@@ -1030,26 +1088,41 @@ h1 {
             cursor: pointer;
     
         }
-
+       
+        
    
 
 
     .howTo >div{
         flex-direction: column;
     } 
-    .appointment_pallet{
-        width: 300px;
+    .howTo .sideMenu ul li{
+        padding-top: 10px;
     }
+    .jobs .innerDiv{
+        width: 300px;
+        align-self: center;
+        margin-inline: auto;
+    }
+    .jobs >div .jobPallet{
+        width: inherit;
+    }
+    .jobs >div .jobPallet h3{
+     font-size: 14px;   
+    }
+
+    .jobs>div .jobPallet p{
+        font-size: 12px;
+    }
+
+   .appointment .appointment_pallet {
+    width: 300px;
+   }
+
 
 }
 
-
-
-
-
-
-
-
+/*descriptions for screens below or equal to 320px*/
 @media only screen and (max-width: 320px) {
 
    
